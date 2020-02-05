@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VR;
+using UnityEngine.XR;
 
 public class PlayerSelector : MonoBehaviour
 {
@@ -14,15 +16,13 @@ public class PlayerSelector : MonoBehaviour
     /// </summary>
     [SerializeField]
     private GameObject fp_Controller;
-    // Start is called before the first frame update
-    void Start()
+
+    /// <summary>
+    /// Occurs before the first start method
+    /// </summary>
+    private void Awake()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
