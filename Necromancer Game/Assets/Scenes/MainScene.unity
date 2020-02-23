@@ -913,7 +913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803984124}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.61, y: 175.87799, z: -2.4800003}
+  m_LocalPosition: {x: -19.76, y: 175.87799, z: -2.4800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1930755361}
@@ -2850,6 +2850,7 @@ GameObject:
   - component: {fileID: 1251866457}
   - component: {fileID: 1246586929}
   - component: {fileID: 1246586928}
+  - component: {fileID: 1246586930}
   m_Layer: 0
   m_Name: Character_Peasant
   m_TagString: Untagged
@@ -2865,11 +2866,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246586927}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0491195, y: 1.9134067, z: 11.073409}
-  m_Center: {x: 0, y: 0.85560995, z: 5.222611}
+  m_Size: {x: 2.0491195, y: 1.9134067, z: 0.5421839}
+  m_Center: {x: 0, y: 0.85560995, z: 0.2661109}
 --- !u!114 &1246586929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2889,6 +2890,18 @@ MonoBehaviour:
   - {fileID: 621498637}
   - {fileID: 970973484}
   - {fileID: 1689426238}
+--- !u!114 &1246586930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246586927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbb2420cbe3a61459285ae627c78a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1246587727
 GameObject:
   m_ObjectHideFlags: 0
@@ -9155,6 +9168,10 @@ PrefabInstance:
     - target: {fileID: 688240406, guid: 742807baa780cde408b2d101b14ef438, type: 3}
       propertyPath: m_TagToCompare
       value: Pickupable
+      objectReference: {fileID: 0}
+    - target: {fileID: 688240407, guid: 742807baa780cde408b2d101b14ef438, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1047551349, guid: 742807baa780cde408b2d101b14ef438, type: 3}
