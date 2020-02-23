@@ -15,12 +15,17 @@ public class TimeManager : MonoBehaviour, ISubject
     /// </summary>
     public string TimeOfDay {
         get { return _timeOfDay; }
-        set { _timeOfDay = value;
+        private set { _timeOfDay = value;
             Notify();
         }
     }
     private string _timeOfDay;
 
+
+    private void Start()
+    {
+        TimeOfDay = "day";
+    }
     /// <summary>
     /// Subscrives an observer
     /// </summary>
@@ -76,10 +81,20 @@ public class TimeManager : MonoBehaviour, ISubject
 
     _observers = new List<IObserver>();
         }
-    
 
-    public void test(string Time)
+    public void ChangeTime()
     {
-        TimeOfDay = Time;
+        if (TimeOfDay == "day")
+        {
+            TimeOfDay = "night";
+        } 
+        else if (_timeOfDay == "night")
+        {
+            TimeOfDay = "day";
+        }
+        else
+        {
+            Debug.LogError("ERROR: TimeOfDay incorrectly set. Time of day is: " + TimeOfDay);
+        }
     }
 }

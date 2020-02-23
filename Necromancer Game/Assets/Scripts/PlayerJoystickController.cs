@@ -16,11 +16,22 @@ public class PlayerJoystickController : MonoBehaviour
     [SerializeField] private float m_speed = 1;
 
     [SerializeField] private float m_rotationSpeed = 50;
+
+    /// <summary>
+    /// Reference to the singleton found in Player class.
+    /// </summary>
+    private Player player;
+    private void Awake()
+    {
+
+    }
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
         //Reference to the singleton found in Player class
-        Player player = Player.instance;
+        player = Player.instance;
         //==========================
         //Left Joystick
         //==========================
