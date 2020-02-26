@@ -1032,7 +1032,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50866
+  m_Name: pb_Mesh50830
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1432,7 +1432,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50880
+  m_Name: pb_Mesh50844
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2902,6 +2902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbb2420cbe3a61459285ae627c78a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  test_minion: {fileID: -927199367670048503, guid: aae66eb968fc0f04e8dc876d59eb7e9c,
+    type: 3}
 --- !u!1 &1246587727
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,7 +4171,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50848
+  m_Name: pb_Mesh50812
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8098,7 +8100,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh50764
+  m_Name: pb_Mesh50716
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

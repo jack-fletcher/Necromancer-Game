@@ -61,14 +61,17 @@ public class Inventory : MonoBehaviour
     }
 
     /// <summary>
-    /// Detaches the parent from the object when the player moves it from its inventory. Functionally removes it from the inventory.
+    /// Detaches the parent from the object when the player moves it from its inventory. Functionally removes it from the inventory. Ignores if its already stopped being the parent for some reason. Remove inner if statement if you want to reverse this.
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == m_TagToCompare)
         {
-            other.transform.parent = null;
+            if (other.transform.parent == this.gameObject)
+            {
+                other.transform.parent = null;
+            }
         }
     }
 
