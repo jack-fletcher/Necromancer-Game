@@ -36,7 +36,7 @@ public void CheckForParts()
         bool isComplete = false;
         foreach (GameObject point in m_points)
         {
-            ///BUG: This only checks if the point has children then checks if the parent has the component. Needs to check if children have component.
+            ///BUG: This only checks if the point has children then checks if the parent has the component. Needs to check if children have component. FIXED: Change to GetComponentInChildren
             if (point.transform.childCount > 0)
             {
                 isComplete = true;

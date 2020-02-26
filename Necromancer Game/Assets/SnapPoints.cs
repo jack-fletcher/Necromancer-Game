@@ -29,91 +29,76 @@ public class SnapPoints : MonoBehaviour
                     case Part_Type.head:
                         foreach (Hand hand in m_hands)
                         {
-                            {
-                                Vector3 scale = other.transform.localScale;
-                                hand.DetachObject(other.gameObject);
+                            hand.DetachObject(other.gameObject);
+                        }
+                                Vector3 scale = other.transform.localScale;                           
                                 other.gameObject.transform.SetParent(m_Snappoints[0].transform);
                                 other.gameObject.transform.position = m_Snappoints[0].transform.position;
                                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
                                 Destroy(other.gameObject.GetComponent<Throwable>());
-                                other.transform.localScale = scale;
-                            }
-                        }
+                                other.transform.localScale = scale;                          
+                        
                         break;
                     case Part_Type.torso:
                         foreach (Hand hand in m_hands)
                         {
-                            {
-                                Vector3 scale = other.transform.localScale;
-
-                                hand.DetachObject(other.gameObject);
+                            hand.DetachObject(other.gameObject);
+                        }
+                                scale = other.transform.localScale;
                                 other.gameObject.transform.SetParent(m_Snappoints[5].transform);
                                 other.gameObject.transform.position = m_Snappoints[5].transform.position;
                                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
                                 other.transform.localScale = scale;
-
-                            }
-                        }
+                        
                             break;
                     case Part_Type.left_arm:
                         foreach (Hand hand in m_hands)
                         {
-                            {
-                                Vector3 scale = other.transform.localScale;
-
-                                hand.DetachObject(other.gameObject);
+                            hand.DetachObject(other.gameObject);
+                        }
+                                scale = other.transform.localScale;
                                 other.gameObject.transform.SetParent(m_Snappoints[2].transform);
                                 other.gameObject.transform.position = m_Snappoints[2].transform.position;
                                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
                                 other.transform.localScale = scale;
-
-                            }
-                        }
+                        
                         break;
                     case Part_Type.right_arm:
                         foreach (Hand hand in m_hands)
                         {
-                            {
-                                Vector3 scale = other.transform.localScale;
-
-                                hand.DetachObject(other.gameObject);
+                            hand.DetachObject(other.gameObject);
+                        }
+                                scale = other.transform.localScale;
                                 other.gameObject.transform.SetParent(m_Snappoints[1].transform);
                                 other.gameObject.transform.position = m_Snappoints[1].transform.position;
                                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
                                 other.transform.localScale = scale;
 
-                            }
-                        }
+                            
+                        
                         break;
                     case Part_Type.left_leg:
                         foreach (Hand hand in m_hands)
                         {
-                            {
-                                Vector3 scale = other.transform.localScale;
-
-                                hand.DetachObject(other.gameObject);
+                            hand.DetachObject(other.gameObject);
+                        }
+                                scale = other.transform.localScale;
                                 other.gameObject.transform.SetParent(m_Snappoints[3].transform);
                                 other.gameObject.transform.position = m_Snappoints[3].transform.position;
                                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
                                 other.transform.localScale = scale;
-
-                            }
-                        }
                         break;
                     case Part_Type.right_leg:
                         foreach (Hand hand in m_hands)
                         {
-                            {
-                                Vector3 scale = other.transform.localScale;
-
-                                hand.DetachObject(other.gameObject);
+                            hand.DetachObject(other.gameObject);
+                        }
+                                scale = other.transform.localScale;
                                 other.gameObject.transform.SetParent(m_Snappoints[4].transform);
                                 other.gameObject.transform.position = m_Snappoints[4].transform.position;
                                 other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
                                 other.transform.localScale = scale;
 
-                            }
-                        }
                         break;
 
                     default:
