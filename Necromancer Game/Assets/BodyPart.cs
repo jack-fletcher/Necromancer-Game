@@ -25,6 +25,5 @@ public class BodyPart : MonoBehaviour
     public Part_Type m_part_Type;
     public Class_Type m_class_Type;
 
-
-
+   
 }
