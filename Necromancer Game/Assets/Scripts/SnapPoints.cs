@@ -109,8 +109,10 @@ public class SnapPoints : MonoBehaviour
                 }
             }
         }
-      //  m_cc.CheckForParts();
-
+        ///So I can debug these things without needing to go into VR
+#if UNITY_EDITOR
+       // m_cc.CheckForParts();
+#endif
     }
 
 

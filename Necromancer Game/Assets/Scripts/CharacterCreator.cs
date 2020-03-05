@@ -26,7 +26,6 @@ public class CharacterCreator : MonoBehaviour
         {
             m_dict.Add(bp.ToString(), 0);
         }
-        Debug.Log("dict size is: " + m_dict.Count);
 }
 /// <summary>
 /// 
@@ -60,15 +59,15 @@ public void CheckForParts()
             string _minionToCreate = m_dict.ElementAt(0).Key;
             for (int i = 1; i < m_dict.Count; i++)
             {
-                Debug.Log(i);
+       
 
                 if (m_dict.ElementAt(i).Value > _highest)
                 {
-                    Debug.Log(i);
+   
 
                     _highest = m_dict.ElementAt(i).Value;
                     _minionToCreate = m_dict.ElementAt(i).Key;
-                    Debug.Log(i);
+  
                 }
             }
 
@@ -89,18 +88,31 @@ public void CheckForParts()
         switch (_minionToCreate)
         {
             case "knight":
-                Instantiate(m_knight, this.transform);
-
+               GameObject _knight = Instantiate(m_knight, this.transform);
+                if (_knight.GetComponent<CharacterStats>() == null)
+                {
+                    _knight.AddComponent<CharacterStats>();
+                    _knight.GetComponent<CharacterStats>().m_characterType = Character_Type.Knight;
+                }
                 break;
 
             case "berserker":
-                Instantiate(m_berserker, this.transform);
-
+                GameObject _berserker = Instantiate(m_berserker, this.transform);
+                if (_berserker.GetComponent<CharacterStats>() == null)
+                {
+                    _berserker.AddComponent<CharacterStats>();
+                    _berserker.GetComponent<CharacterStats>().m_characterType = Character_Type.Berserker;
+                }
                 break;
 
             case "thief":
-                Instantiate(m_thief, this.transform);
 
+                GameObject _thief = Instantiate(m_thief, this.transform);
+                if (_thief.GetComponent<CharacterStats>() == null)
+                {
+                    _thief.AddComponent<CharacterStats>();
+                    _thief.GetComponent<CharacterStats>().m_characterType = Character_Type.Thief;
+                }
                 break;
 
             default:
