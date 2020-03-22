@@ -3,30 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class FriendlyController : MonoBehaviour
+[RequireComponent(typeof(CharacterStats))]
+public class EnemyController : MonoBehaviour
 {
-
 
     private CharacterController m_cc;
 
     private CharacterStats m_cs;
 
-    public int m_startIndex = 0;
-    private int m_currentState;
+    private int m_startIndex;
 
-    public Vector3 m_test;
+    public int m_currentState;
+    private void Awake()
+    {
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        m_startIndex = NavigationManager.Instance.m_navigationPoints.Length - 1;
         m_currentState = m_startIndex;
         m_cc = this.GetComponent<CharacterController>();
         m_cs = this.GetComponent<CharacterStats>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (m_currentState < NavigationManager.Instance.m_navigationPoints.Length){
+        if (m_currentState >= 0)
+        {
             SimpleMove(m_currentState);
         }
     }
@@ -64,16 +71,18 @@ public class FriendlyController : MonoBehaviour
         ///Otherwise, if the target is a character, attack it. If not, change the target state
         else
         {
-            if (_goal.GetComponent<CharacterStats>() != null) {
+            if (_goal.GetComponent<CharacterStats>() != null)
+            {
                 m_cs.Attack(_enemyFound.GetComponent<CharacterStats>());
             }
-            else {
-                m_currentState++;
-            } 
+            else
+            {
+                m_currentState--;
+            }
 
         }
 
-       
+
 
 
 
@@ -90,7 +99,7 @@ public class FriendlyController : MonoBehaviour
 
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            if (hitColliders[i].tag == "Enemy")
+            if (hitColliders[i].tag == "Friendly")
             {
                 return hitColliders[i].gameObject;
             }

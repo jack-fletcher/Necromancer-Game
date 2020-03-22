@@ -9,6 +9,9 @@ TagManager:
   - GlobalLighting
   - Pickupable
   - Grave
+  - Navigation
+  - Enemy
+  - Friendly
   layers:
   - Default
   - TransparentFX

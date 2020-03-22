@@ -15,7 +15,8 @@ public class TimeSwitcher : MonoBehaviour, IObserver
     /// <summary>
     /// 
     /// </summary>
-    private Material m_defaultSkybox;
+    public Material m_daySkybox;
+
     /// <summary>
     /// 
     /// </summary>
@@ -26,7 +27,6 @@ public class TimeSwitcher : MonoBehaviour, IObserver
 
         _time.Subscribe(this);
 
-        m_defaultSkybox = RenderSettings.skybox;
 
         m_globalLight = GameObject.FindGameObjectsWithTag("GlobalLighting");
     }
@@ -49,7 +49,7 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         switch (_time.TimeOfDay)
         {
             case "day":
-                RenderSettings.skybox = m_defaultSkybox;
+                RenderSettings.skybox = m_daySkybox;
 
                 for (int i = 0; i < m_globalLight.Length; i++)
                 {

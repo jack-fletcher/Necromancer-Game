@@ -117,6 +117,22 @@ public class CharacterStats : MonoBehaviour
     }
 
 
+    private float m_timeTillAttack;
+    public void Attack(CharacterStats target)
+    {
+        if (Time.time >= m_timeTillAttack)
+        {
+            m_timeTillAttack = Time.time + m_attackSpeed;
+
+            DealDamage(target);
+        }
+
+        else
+        {
+        //    m_timeTillAttack = Time.time + m_attackSpeed;
+        }
+    }
+
     /// <summary>
     /// Removes the specified amount of health from the characters health.
     /// </summary>
@@ -144,7 +160,7 @@ public class CharacterStats : MonoBehaviour
         ///Remove the amount of resistance from the damage
         damage *= res;
         m_currentHealth = Mathf.Clamp(m_currentHealth - damage, 0, m_currentHealth);
-        Debug.Log(this.gameObject.name + " took " + damage + " damage from " + _at.ToString());
+        Debug.Log(this.gameObject.name + " took " + damage +  _at.ToString() + " damage.");
         if (m_currentHealth <= 0)
         {
             Die();
@@ -159,17 +175,12 @@ public class CharacterStats : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    public void DealDamage(GameObject _target)
+    public void DealDamage(CharacterStats _target)
     {
-        _target.GetComponent<CharacterStats>().TakeDamage(m_physicalDamage, m_attackType);
+        _target.TakeDamage(m_physicalDamage, m_attackType);
     }
-    /// <summary>
-    /// Moves the character in a set path using movement speed.
-    /// </summary>
-    public void Movement()
-    {
 
-    }
+    
 
     public virtual void CalculateStats()
     {
