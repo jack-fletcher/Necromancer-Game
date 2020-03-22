@@ -8,9 +8,9 @@ public class CharacterCreator : MonoBehaviour
 {
     private SnapPoints m_snapPoints;
     private GameObject[] m_points;
-    [SerializeField] private GameObject m_knight;
-    [SerializeField] private GameObject m_berserker;
-    [SerializeField] private GameObject m_thief;
+    [SerializeField] private GameObject m_knight = null;
+    [SerializeField] private GameObject m_berserker = null;
+    [SerializeField] private GameObject m_thief = null;
 
     Dictionary<string, int> m_dict = new Dictionary<string, int>();
     /// <summary>
