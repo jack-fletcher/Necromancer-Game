@@ -10,9 +10,12 @@ public class VillagerController : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnTriggerStay(Collider other)
     {
-        
+        if (other.tag == "Player")
+        {
+            //transform.LookAt(other.gameObject.transform);
+        }
     }
 }

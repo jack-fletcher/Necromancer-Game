@@ -49,6 +49,7 @@ public class Grave : MonoBehaviour
 
         ///Test/debug
         m_bodyPart = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        ///set the new body part to the position of this gameobject
         m_bodyPart.transform.position = transform.position;
         m_bodyPart.AddComponent<BodyPart>();
         m_bodyPart.AddComponent<Interactable>();

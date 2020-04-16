@@ -2,53 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// The type of character the entity is.
-/// </summary>
-public enum Character_Type
-{
-    Knight,
-    Berserker,
-    Thief
-}
 
-public enum Attack_Type
-{
-    /// <summary>
-    /// Damage from a physical source, e.g sword or arrow.
-    /// </summary>
-    Physical,
-    /// <summary>
-    /// Damage from a magical source, e.g wand or staff.
-    /// </summary>
-    Magical,
-    /// <summary>
-    /// A subsection of magic, dealing fire damage.
-    /// </summary>
-    Fire,
-    /// <summary>
-    /// A subsection of magic, dealing water damage.
-    /// </summary>
-    Water,
-    /// <summary>
-    /// A subsection of magic, dealing earth damage.
-    /// </summary>
-    Earth,
-    /// <summary>
-    /// A subsection of magic, dealing air damage.
-    /// </summary>
-    Air,
-    /// <summary>
-    /// Damage given to the character via the world, e.g fall damage or world fires. Equivalent to 'True damage' where there's no resistance for this.
-    /// </summary>
-    World
-}
+
 /// <summary>
 /// Meant to be inherited from. Shows stats of a character.
 /// </summary>
 public class CharacterStats : MonoBehaviour
 {
-    public Character_Type m_characterType;
+    public Class_Type m_characterType;
     #region Attributes
     /// <summary>
     /// The players endurance level. Controls the health of the character and damage resistance.
@@ -160,11 +121,29 @@ public class CharacterStats : MonoBehaviour
         ///Remove the amount of resistance from the damage
         damage *= res;
         m_currentHealth = Mathf.Clamp(m_currentHealth - damage, 0, m_currentHealth);
-        Debug.Log(this.gameObject.name + " took " + damage +  _at.ToString() + " damage.");
+        Debug.Log(this.gameObject.name + " took " + damage +  _at.ToString() + " damage." );
         if (m_currentHealth <= 0)
         {
             Die();
         }
+
+        Renderer[] _renderers = GetComponentsInChildren<Renderer>();
+
+        
+        foreach (Renderer rend in _renderers)
+        {
+            StartCoroutine("Flash", rend);
+           // rend.material.color = _col;
+        }
+    }
+
+
+    IEnumerator Flash(Renderer rend)
+    {
+        Color _col = rend.material.color;
+        rend.material.color = Color.red;
+        yield return new WaitForSeconds(0.5f);
+        rend.material.color = _col;
     }
     /// <summary>
     /// Kills the character.
@@ -178,6 +157,7 @@ public class CharacterStats : MonoBehaviour
     public void DealDamage(CharacterStats _target)
     {
         _target.TakeDamage(m_physicalDamage, m_attackType);
+        Debug.Log(transform.name + " Is dealing damage.");
     }
 
     
@@ -185,7 +165,7 @@ public class CharacterStats : MonoBehaviour
     public virtual void CalculateStats()
     {
         switch (m_characterType) {
-            case Character_Type.Knight:
+            case Class_Type.knight:
 
                 ///Decide attack type
                 m_attackType = Attack_Type.Physical;
@@ -196,7 +176,7 @@ public class CharacterStats : MonoBehaviour
                 m_intelligence = Random.Range(2, 4);
 
                 break;
-            case Character_Type.Berserker:
+            case Class_Type.berserker:
 
                 ///Decide attack type
                 m_attackType = Attack_Type.Physical;
@@ -208,7 +188,7 @@ public class CharacterStats : MonoBehaviour
 
                 break;
 
-            case Character_Type.Thief:
+            case Class_Type.thief:
 
                 ///Decide attack type
                 m_attackType = Attack_Type.Physical;

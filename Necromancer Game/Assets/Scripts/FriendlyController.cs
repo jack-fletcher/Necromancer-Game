@@ -3,37 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(CharacterStats))]
-public class EnemyController : MonoBehaviour
+public class FriendlyController : MonoBehaviour
 {
+
 
     private CharacterController m_cc;
 
     private CharacterStats m_cs;
 
-    private int m_startIndex;
+    public int m_startIndex = 0;
+    private int m_currentState;
 
-    public int m_currentState;
-    private void Awake()
-    {
-
-    }
-
+    public Vector3 m_test;
     // Start is called before the first frame update
     void Start()
     {
-        m_startIndex = NavigationManager.Instance.m_navigationPoints.Length - 1;
         m_currentState = m_startIndex;
         m_cc = this.GetComponent<CharacterController>();
         m_cs = this.GetComponent<CharacterStats>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (m_currentState >= 0)
-        {
+        if (m_currentState < NavigationManager.Instance.m_navigationPoints.Length){
             SimpleMove(m_currentState);
         }
     }
@@ -68,21 +61,21 @@ public class EnemyController : MonoBehaviour
 
         }
 
-        ///Otherwise, if the target is a character, attack it. If not, change the target state
+        ///Otherwise, if the target is a character, attack it. If not, change the target state.
+        ///At this point, you're within the targets deadzone, so any data you may wish to collect about the waypoint
+        ///Can be collected.
         else
         {
-            if (_goal.GetComponent<CharacterStats>() != null)
-            {
+            if (_goal.GetComponent<CharacterStats>() != null) {
                 m_cs.Attack(_enemyFound.GetComponent<CharacterStats>());
             }
-            else
-            {
-                m_currentState--;
-            }
+            else {
+                m_currentState++;
+            } 
 
         }
 
-
+       
 
 
 
@@ -99,7 +92,7 @@ public class EnemyController : MonoBehaviour
 
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            if (hitColliders[i].tag == "Friendly")
+            if (hitColliders[i].tag == "Enemy")
             {
                 return hitColliders[i].gameObject;
             }
