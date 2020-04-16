@@ -44,6 +44,7 @@ public class NavigationManager : MonoBehaviour
     void Start()
     {
         //SortNavigationPoints();
+
     }
 
     // Update is called once per frame
@@ -71,7 +72,7 @@ public class NavigationManager : MonoBehaviour
     //            m_navigationPoints.Remove(m_navigationPoints[i]);
     //        }
 
-                
+
     //        if (m_navigationPoints[i].GetComponent<NavPoint>().m_type == Nav_Type.End)
     //        {
     //            ///Get the end point
@@ -86,5 +87,22 @@ public class NavigationManager : MonoBehaviour
     //        }
     //    }
     //}
+
+
+    void OnDrawGizmosSelected()
+    {
+  
+        for (int i = 0; i < m_navigationPoints.Length; i++)
+        {
+
+            if (i + 1 < m_navigationPoints.Length)
+            {
+                Gizmos.color = Color.blue;
+                Gizmos.DrawLine(m_navigationPoints[i].transform.position, m_navigationPoints[i + 1].transform.position);
+            }
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(m_navigationPoints[i].transform.position, 1);
+        }
+    }
 }
 

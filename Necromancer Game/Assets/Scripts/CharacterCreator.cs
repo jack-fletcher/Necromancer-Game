@@ -41,6 +41,7 @@ public void CheckForParts()
                 isComplete = true;
                 if(point.GetComponentInChildren<BodyPart>() != null)
                 {
+                    ///Add 1 to m_dicts count of each type of body part
                     m_dict[point.GetComponentInChildren<BodyPart>().m_class_Type.ToString()]++;
                     Debug.Log("Class Type is: " + point.GetComponentInChildren<BodyPart>().m_class_Type.ToString());
                 }
@@ -55,8 +56,13 @@ public void CheckForParts()
         if (isComplete == true)
         {
             //Create a minion
+
+            ///Decide its class
+            //Default value is the first element of dictionary
             int _highest = m_dict.ElementAt(0).Value;
+            ///Therefore the default minion is the first element
             string _minionToCreate = m_dict.ElementAt(0).Key;
+            ///Iterate through dictionary to see which has the highest number of calls
             for (int i = 1; i < m_dict.Count; i++)
             {
        
@@ -85,33 +91,36 @@ public void CheckForParts()
 
     private void CreateMinion(string _minionToCreate)
     {
+        GameObject _minion = null;
         switch (_minionToCreate)
         {
+           
             case "knight":
-               GameObject _knight = Instantiate(m_knight, this.transform);
-                if (_knight.GetComponent<CharacterStats>() == null)
+                _minion = Instantiate(m_knight);
+                if (_minion.GetComponent<CharacterStats>() == null)
                 {
-                    _knight.AddComponent<CharacterStats>();
-                    _knight.GetComponent<CharacterStats>().m_characterType = Character_Type.Knight;
+                    _minion.AddComponent<CharacterStats>();
+                    _minion.GetComponent<CharacterStats>().m_characterType =  Class_Type.knight;
                 }
                 break;
 
             case "berserker":
-                GameObject _berserker = Instantiate(m_berserker, this.transform);
-                if (_berserker.GetComponent<CharacterStats>() == null)
+                 _minion = Instantiate(m_berserker);
+                if (_minion.GetComponent<CharacterStats>() == null)
                 {
-                    _berserker.AddComponent<CharacterStats>();
-                    _berserker.GetComponent<CharacterStats>().m_characterType = Character_Type.Berserker;
+                    _minion.AddComponent<CharacterStats>();
+                    _minion.GetComponent<CharacterStats>().m_characterType = Class_Type.berserker;
                 }
                 break;
 
             case "thief":
 
-                GameObject _thief = Instantiate(m_thief, this.transform);
-                if (_thief.GetComponent<CharacterStats>() == null)
+                _minion = Instantiate(m_thief);
+                if (_minion.GetComponent<CharacterStats>() == null)
                 {
-                    _thief.AddComponent<CharacterStats>();
-                    _thief.GetComponent<CharacterStats>().m_characterType = Character_Type.Thief;
+                  
+                    _minion.AddComponent<CharacterStats>();
+                    _minion.GetComponent<CharacterStats>().m_characterType = Class_Type.thief;
                 }
                 break;
 
@@ -121,7 +130,14 @@ public void CheckForParts()
                 break;
 
         }
+        _minion.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         m_snapPoints.ClearParts();
+
+        //Not sure if I need to clear the dict, I think so - //TODO check this:
+        //foreach (var key in m_dict.Keys.ToList())
+        //{
+        //    m_dict[key] = 0;
+        //}
         Debug.Log("Minion created");
     }
 }

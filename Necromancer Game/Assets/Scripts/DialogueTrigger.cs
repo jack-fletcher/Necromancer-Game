@@ -8,19 +8,19 @@ using UnityEngine;
 /// </summary>
 public class DialogueTrigger : MonoBehaviour
 {
-    [SerializeField] private Collider m_colliderSpace;
 
-    [SerializeField] private Dialogue m_dialogue;
+    [SerializeField] private Dialogue m_dialogue = null;
 
-    [SerializeField] private Canvas m_canvas;
+    [SerializeField] private Canvas m_canvas = null;
 
-    [SerializeField] private TextMeshProUGUI m_name;
+    [SerializeField] private TextMeshProUGUI m_name = null;
 
-    [SerializeField] private TextMeshProUGUI m_content;
+    [SerializeField] private TextMeshProUGUI m_content = null;
         // Start is called before the first frame update
         void Start()
     {
         m_canvas.enabled = false;
+        m_dialogue.SetSentences();
     }
 
     // Update is called once per frame
@@ -38,7 +38,6 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            Debug.Log(other.tag);
         }
     }
 

@@ -32,7 +32,7 @@ public class GraveManager : MonoBehaviour
 
     private void Setup()
     {
-        
+        int counter = 1;
         foreach (GameObject go in m_graveSpots)
         {
             Grave _grave = go.GetComponentInChildren<Grave>();
@@ -41,8 +41,23 @@ public class GraveManager : MonoBehaviour
             Part_Type _pt = (Part_Type)_idx;
             int idx = UnityEngine.Random.Range(0, Enum.GetValues(typeof(Class_Type)).Length);
             Class_Type _ct = (Class_Type)idx;
+
+            ///Debug
+            _ct = Class_Type.knight;
             ///Set text on grave
-            _gravestone.SetCanvasText(_ct.ToString());
+            string _ctName = _ct.ToString();
+
+
+            counter++;
+            string query = $"(//*[@id='{_ctName}']//*[@id='GraveText'])[{counter}]";
+            string graveText = XMLManager.Instance.ReadSingleNodeData(query);
+
+            if (graveText == null)
+            {
+                graveText = "Dummy Text";
+            }
+
+            _gravestone.SetCanvasText(graveText);
 
             ///Add body part to grave
             _grave.SetBodyPart(_pt, _ct);
