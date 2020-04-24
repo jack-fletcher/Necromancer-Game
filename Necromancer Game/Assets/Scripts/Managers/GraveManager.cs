@@ -30,6 +30,9 @@ public class GraveManager : MonoBehaviour
        
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void Setup()
     {
         int counter = 1;

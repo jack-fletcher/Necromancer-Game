@@ -14,9 +14,9 @@ public class EnemyController : MonoBehaviour
     private int m_startIndex;
 
     [Tooltip("Does the unit patrol between two points?")]
-    [SerializeField] private bool m_patrols;
+    [SerializeField] private bool m_patrols = false;
     [Tooltip("Does the unit move towards the enemy spawn? ")]
-    [SerializeField] private bool m_MovesTowardsEnemyStart;
+    [SerializeField] private bool m_MovesTowardsEnemyStart = false;
     public int m_currentState;
     private void Awake()
     {

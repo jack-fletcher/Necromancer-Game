@@ -20,7 +20,11 @@ public class TimeSwitcher : MonoBehaviour, IObserver
     /// <summary>
     /// 
     /// </summary>
-    private GameObject[] m_globalLight;
+    private GameObject[] m_dayLights;
+    /// <summary>
+    /// 
+    /// </summary>
+    private GameObject[] m_nightLights;
     private void OnEnable()
     {
 
@@ -28,7 +32,8 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         _time.Subscribe(this);
 
 
-        m_globalLight = GameObject.FindGameObjectsWithTag("GlobalLighting");
+        m_dayLights = GameObject.FindGameObjectsWithTag("DayLighting");
+        m_nightLights = GameObject.FindGameObjectsWithTag("NightLighting");
     }
 
     public void UpdateState(ISubject _subject)
@@ -46,22 +51,31 @@ public class TimeSwitcher : MonoBehaviour, IObserver
 
        
         ///If its not nighttime, change skybox to this and set the default skybox
+        ///Additionally, turn on situational lighting
         switch (_time.TimeOfDay)
         {
             case "day":
                 RenderSettings.skybox = m_daySkybox;
 
-                for (int i = 0; i < m_globalLight.Length; i++)
+                for (int i = 0; i < m_dayLights.Length; i++)
                 {
-                    m_globalLight[i].SetActive(true);
+                    m_dayLights[i].GetComponent<Light>().enabled = true;
+                }
+                for (int i = 0; i < m_nightLights.Length; i++)
+                {
+                    m_nightLights[i].GetComponent<Light>().enabled = false;
                 }
                 break;
 
             case "night":
                 RenderSettings.skybox = m_nightSkybox;
-                for (int i = 0; i < m_globalLight.Length; i++)
+                for (int i = 0; i < m_dayLights.Length; i++)
                 {
-                    m_globalLight[i].SetActive(false);
+                    m_dayLights[i].GetComponent<Light>().enabled = false;
+                }
+                for (int i = 0; i < m_nightLights.Length; i++)
+                {
+                    m_nightLights[i].GetComponent<Light>().enabled = true;
                 }
                 break;
 

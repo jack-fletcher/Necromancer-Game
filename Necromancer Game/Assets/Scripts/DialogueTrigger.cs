@@ -16,6 +16,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_name = null;
 
     [SerializeField] private TextMeshProUGUI m_content = null;
+
+    [SerializeField] private Animator m_anim = null;
         // Start is called before the first frame update
         void Start()
     {
@@ -34,7 +36,8 @@ public class DialogueTrigger : MonoBehaviour
 
         if (other.tag == "Player")
         {
-            TriggerDialogue();
+            m_canvas.enabled = true;
+            ScaleUp();
         }
         else
         {
@@ -52,7 +55,20 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        m_canvas.enabled = true;
         DialogueManager.Instance.StartDialogue(m_dialogue, m_name, m_content);
+    }
+
+    IEnumerator ScaleUp()
+    {
+        m_anim.SetTrigger("ScaleUp");
+
+        AnimatorClipInfo[] _currentClipInfo = m_anim.GetCurrentAnimatorClipInfo(0);
+
+        float _animLength = _currentClipInfo[0].clip.length;
+
+        yield return new WaitForSeconds(_animLength);
+            TriggerDialogue();
+            Debug.Log("Worked");
+
     }
 }

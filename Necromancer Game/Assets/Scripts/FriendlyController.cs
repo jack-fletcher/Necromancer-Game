@@ -52,6 +52,13 @@ public class FriendlyController : MonoBehaviour
 
         moveVector = moveVector.normalized * m_cs.m_movementSpeed;
 
+
+        ///If the character controller isn't grounded, add gravity.
+        if (!m_cc.isGrounded)
+        {
+            moveVector += Physics.gravity;
+        }
+
         ///If the distance between this object and the target state is more than the minimum move distance of 1 units, move
         if (Vector3.Distance(gameObject.transform.position, _goal.position) > 1f)
         {

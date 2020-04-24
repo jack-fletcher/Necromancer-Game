@@ -108,23 +108,45 @@ public class Grave : MonoBehaviour
     /// 
     /// </summary>
     /// <param name="collision"></param>
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Weapon _weapon = collision.gameObject.GetComponent<Weapon>();
+    //    //If the object has the weapon script
+    //    if (_weapon != null)
+    //    {
+    //        TakeDamage(collision.gameObject.GetComponent<Weapon>().m_damage);
+    //        Debug.Log("Collided");
+
+    //        ///Get the first point of contact
+    //        ContactPoint _contactPoint = collision.contacts[0];
+
+    //        //Play audioclip
+
+    //        //Visual effect? at first point of hit, instantiate sparks or dirt moving or something similar
+    //    }
+    //    else
+    //    {
+    //        Debug.Log(collision.gameObject.name);
+    //    }
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
-        Weapon _weapon = collision.gameObject.GetComponent<Weapon>();
+        Weapon _weapon = other.gameObject.GetComponent<Weapon>();
         //If the object has the weapon script
         if (_weapon != null)
         {
-            TakeDamage(collision.gameObject.GetComponent<Weapon>().m_damage);
+            TakeDamage(other.gameObject.GetComponent<Weapon>().m_damage);
             Debug.Log("Collided");
 
-            ///Get the first point of contact
-            ContactPoint _contactPoint = collision.contacts[0];
 
             //Play audioclip
 
             //Visual effect? at first point of hit, instantiate sparks or dirt moving or something similar
         }
+        else
+        {
+            Debug.Log(other.gameObject.name);
+        }
     }
-
-
 }

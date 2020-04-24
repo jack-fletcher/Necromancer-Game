@@ -17,7 +17,7 @@ public class PlayerJoystickController : MonoBehaviour
 
     [SerializeField] private float m_rotationSpeed = 50;
 
-    [SerializeField] private CharacterController m_cc;
+    [SerializeField] private CharacterController m_cc = null;
     /// <summary>
     /// Reference to the singleton found in Player class.
     /// </summary>
@@ -42,10 +42,8 @@ public class PlayerJoystickController : MonoBehaviour
         //Get the direction the player is currently facing
         Vector3 dir = player.hmdTransform.TransformDirection(new Vector3(m_input[0].axis.x, 0, m_input[0].axis.y));
 
-        ///Move the player by the value returned by joystick movement, * time delta * speed
-        //player.transform.position += m_speed * Time.deltaTime * Vector3.ProjectOnPlane(dir, Vector3.up);
-
-        m_cc.Move(m_speed * Time.deltaTime * Vector3.ProjectOnPlane(dir, Vector3.up));
+        ///Move the player by the value returned by joystick movement, * time delta * speed - gravity
+        m_cc.Move(m_speed * Time.deltaTime * Vector3.ProjectOnPlane(dir, Vector3.up) - Physics.gravity * Time.deltaTime);
         //==========================
         //Right Joystick
         //==========================

@@ -12,6 +12,8 @@ TagManager:
   - Navigation
   - Enemy
   - Friendly
+  - NightLighting
+  - DayLighting
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Post-Processing
   - 
   - 
   - 

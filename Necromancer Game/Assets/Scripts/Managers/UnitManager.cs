@@ -14,7 +14,7 @@ public class UnitManager : MonoBehaviour
     /// <summary>
     /// A list of all possible enemies
     /// </summary>
-    [SerializeField] private GameObject[] m_enemies;
+    [SerializeField] private GameObject[] m_enemies = null;
 
     /// <summary>
     /// List of enemy gameobjects to create.
@@ -23,12 +23,12 @@ public class UnitManager : MonoBehaviour
     /// <summary>
     /// How many enemies to spawn.
     /// </summary>
-    [SerializeField] private int m_enemiesToSpawn;
+    [SerializeField] private int m_enemiesToSpawn = 0;
 
     [Tooltip("Is this a boss wave?")]
     [SerializeField] private bool m_isBossWave = false;
     [Tooltip("Character that is the boss")]
-    [SerializeField] private GameObject m_bossChar;
+    [SerializeField] private GameObject m_bossChar = null;
     /// <summary>
     /// Implementation of singleton - If there's no other static instance in the scene, keep this one. Else, destroy it
     /// </summary>
@@ -79,7 +79,7 @@ public class UnitManager : MonoBehaviour
 
 
 
-        CreateUnits();
+        //CreateUnits();
     }
 
     private void CreateUnits()

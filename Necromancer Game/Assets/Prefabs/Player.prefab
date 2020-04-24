@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 688240405}
   - component: {fileID: 688240406}
   - component: {fileID: 688240407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &688240405
 Transform:
   m_ObjectHideFlags: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_inventory: {fileID: 688240405}
-  m_TagToCompare: pickupable
+  m_TagToCompare: Pickupable
 --- !u!65 &688240407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688240404}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -68,7 +68,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211872372193534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arrow 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211871380961352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211871906672492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211874781278452}
   - component: {fileID: 1730708261281761276}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sound Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874782027136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211872493371840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211872839902002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,13 +378,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211871699798162}
   - component: {fileID: 1779736603365608632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DebugUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1813211871699798162
 Transform:
   m_ObjectHideFlags: 0
@@ -420,7 +420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211871206779342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211874507470694}
   - component: {fileID: 1783812079636498490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874022590880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874632984582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874915946026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211872316208160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874222330054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211872240356216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -725,7 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874948010014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211872247534166}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: ObjectAttachmentPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211871597182234}
   - component: {fileID: 1779736649476807820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snap Turn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211873071267978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arrow 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211871060331202}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: HoverPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,7 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211871705603500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211871298966710}
   - component: {fileID: 1762707803112995274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: snapTurnFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211873002069462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1079,7 +1079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211872438495332}
   - component: {fileID: 1783812079690537056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813211874269410246}
   - component: {fileID: 1762707814578193788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: snapTurnFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813211874908099666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1249,7 +1249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819441695765}
   - component: {fileID: 1812671819441695766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: JoystickControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,6 +1289,7 @@ MonoBehaviour:
     needsReinit: 0
   m_speed: 2
   m_rotationSpeed: 50
+  m_cc: {fileID: 76984145}
 --- !u!1 &1812671819452585574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,7 +1302,7 @@ GameObject:
   - component: {fileID: 1812671819439081996}
   - component: {fileID: 1812671819446562986}
   - component: {fileID: 1812671819447301652}
-  m_Layer: 27
+  m_Layer: 8
   m_Name: BodyCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,7 +1376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819452363798}
   - component: {fileID: 1812671819446524074}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: ControllerButtonHints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1426,7 +1427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819452328622}
   - component: {fileID: 1812671819446531298}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: ControllerButtonHints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1479,7 +1480,7 @@ GameObject:
   - component: {fileID: 1779736600264169058}
   - component: {fileID: 1812671819446538700}
   - component: {fileID: 1779736649520624500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[SteamVR]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1557,7 +1558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819452325552}
   - component: {fileID: 1812671819446556990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ControllerHoverHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1601,7 +1602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812671819452297002}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: HoverPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,8 +1635,7 @@ GameObject:
   - component: {fileID: 1812671819446619340}
   - component: {fileID: 1779736601090883982}
   - component: {fileID: 1779736649503229062}
-  - component: {fileID: 1047551349}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1772,20 +1772,8 @@ MonoBehaviour:
   handCollider: {fileID: 0}
   clearanceCheckMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 55
   hand: {fileID: 0}
---- !u!114 &1047551349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812671819452614862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fa92c32207941542920c809f2ebd507, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1812671819452631292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,8 +1786,7 @@ GameObject:
   - component: {fileID: 1812671819446570066}
   - component: {fileID: 1779736601472867340}
   - component: {fileID: 1779736601381516448}
-  - component: {fileID: 1611214685}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1936,20 +1923,8 @@ MonoBehaviour:
   handCollider: {fileID: 0}
   clearanceCheckMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 55
   hand: {fileID: 0}
---- !u!114 &1611214685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812671819452631292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fa92c32207941542920c809f2ebd507, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1812671819452639996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,7 +1936,7 @@ GameObject:
   - component: {fileID: 1812671819452316440}
   - component: {fileID: 1812671819446522980}
   - component: {fileID: 1812671819447285272}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: FallbackHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2062,7 +2037,7 @@ GameObject:
   - component: {fileID: 1812671819446556876}
   - component: {fileID: 1812671819446555758}
   - component: {fileID: 1779736603325261450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InputModule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2139,7 +2114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819452282034}
   - component: {fileID: 1812671819446612430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ControllerHoverHighlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2187,7 +2162,7 @@ GameObject:
   - component: {fileID: 1812671819446567684}
   - component: {fileID: 1812671819444610380}
   - component: {fileID: 1812671819445578118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VRCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2290,9 +2265,9 @@ GameObject:
   - component: {fileID: 1812671819452321884}
   - component: {fileID: 1812671819440290814}
   - component: {fileID: 1812671819447323236}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: HeadCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2349,7 +2324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812671819452281324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SteamVRObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2387,7 +2362,7 @@ GameObject:
   - component: {fileID: 1812671819452280818}
   - component: {fileID: 1812671819451740446}
   - component: {fileID: 1812671819446544196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FallbackObjects
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2477,7 +2452,7 @@ GameObject:
   - component: {fileID: 1812671819452353062}
   - component: {fileID: 1812671819453603096}
   - component: {fileID: 1812671819454616128}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2556,7 +2531,7 @@ GameObject:
   - component: {fileID: 1812671819454645252}
   - component: {fileID: 1812671819453581024}
   - component: {fileID: 1812671819446568906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2660,9 +2635,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819452329544}
   - component: {fileID: 1812671819446554436}
-  m_Layer: 0
+  - component: {fileID: 76984145}
+  - component: {fileID: 76984143}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2718,6 +2695,38 @@ MonoBehaviour:
     actionPath: /actions/default/in/HeadsetOnHead
     needsReinit: 0
   allowToggleTo2D: 1
+--- !u!143 &76984145
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812671819452669488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.5
+  m_Radius: 0.37
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &76984143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812671819452669488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c358a10dd6a3849a226d3bef029b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cc: {fileID: 0}
+  m_useRealHeight: 1
 --- !u!1 &1812671819452670178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,7 +2736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812671819452374730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NoSteamVRFallbackObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2759,7 +2768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812671819452285368}
-  m_Layer: 26
+  m_Layer: 8
   m_Name: ObjectAttachmentPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2790,7 +2799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812671819452303664}
   - component: {fileID: 1812671819449823862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FollowHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
