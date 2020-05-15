@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
 
     private int m_startIndex;
 
+    private Animator m_anim;
     [Tooltip("Does the unit patrol between two points?")]
     [SerializeField] private bool m_patrols = false;
     [Tooltip("Does the unit move towards the enemy spawn? ")]
@@ -30,16 +31,16 @@ public class EnemyController : MonoBehaviour
         m_currentState = m_startIndex;
         m_cc = this.GetComponent<CharacterController>();
         m_cs = this.GetComponent<CharacterStats>();
-
+        m_anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (m_currentState >= 0)
-        {
+
             SimpleMove(m_currentState);
-        }
+
+          //  m_anim.SetBool("isWalking", false);
     }
 
     /// <summary>
@@ -79,6 +80,11 @@ public class EnemyController : MonoBehaviour
         //Normalise the speed based on the characters movement speed
         moveVector = moveVector.normalized * m_cs.m_movementSpeed;
 
+        ///If the character controller isn't grounded, add gravity.
+        if (!m_cc.isGrounded)
+        {
+            moveVector += Physics.gravity;
+        }
 
 
         ///If the distance between this object and the target state is more than the minimum move distance of 1 units, move
@@ -86,6 +92,8 @@ public class EnemyController : MonoBehaviour
         {
 
             m_cc.Move(moveVector * Time.deltaTime);
+            m_anim.SetBool("isWalking", true);
+            m_anim.SetBool("isAttacking", false);
             transform.LookAt(_goal);
 
         }
@@ -96,18 +104,27 @@ public class EnemyController : MonoBehaviour
             if (_goal.GetComponent<CharacterStats>() != null)
             {
                 m_cs.Attack(_enemyFound.GetComponent<CharacterStats>());
+                m_anim.SetBool("isWalking", false);
+                m_anim.SetBool("isAttacking", true);
             }
-            else
+            else if (m_currentState >= 0)
             {
                 m_currentState--;
             }
-
+            else
+            {
+                m_anim.SetBool("isWalking", false);
+            }
         }
 
+    }
 
-
-
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<Weapon>() != null)
+        {
+            m_cs.TakeDamage(collision.gameObject.GetComponent<Weapon>().m_damage, collision.gameObject.GetComponent<Weapon>().m_attackType);
+        }
     }
 
     private Transform Patrol()

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class TimeSwitcher : MonoBehaviour, IObserver
 {
@@ -54,7 +55,7 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         ///Additionally, turn on situational lighting
         switch (_time.TimeOfDay)
         {
-            case "day":
+            case TimeOfDay.day:
                 RenderSettings.skybox = m_daySkybox;
 
                 for (int i = 0; i < m_dayLights.Length; i++)
@@ -67,7 +68,7 @@ public class TimeSwitcher : MonoBehaviour, IObserver
                 }
                 break;
 
-            case "night":
+            case TimeOfDay.night:
                 RenderSettings.skybox = m_nightSkybox;
                 for (int i = 0; i < m_dayLights.Length; i++)
                 {
@@ -86,5 +87,6 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         }
        
     }
+
 }
 

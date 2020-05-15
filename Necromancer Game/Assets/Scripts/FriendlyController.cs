@@ -9,6 +9,8 @@ public class FriendlyController : MonoBehaviour
 
     private CharacterController m_cc;
 
+    private Animator m_anim;
+
     private CharacterStats m_cs;
 
     public int m_startIndex = 0;
@@ -21,6 +23,7 @@ public class FriendlyController : MonoBehaviour
         m_currentState = m_startIndex;
         m_cc = this.GetComponent<CharacterController>();
         m_cs = this.GetComponent<CharacterStats>();
+        m_anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,11 @@ public class FriendlyController : MonoBehaviour
     {
         if (m_currentState < NavigationManager.Instance.m_navigationPoints.Length){
             SimpleMove(m_currentState);
+        }
+        else
+        {
+            m_anim.SetBool("isWalking", false);
+           
         }
     }
 
@@ -64,6 +72,8 @@ public class FriendlyController : MonoBehaviour
         {
 
             m_cc.Move(moveVector * Time.deltaTime);
+            m_anim.SetBool("isWalking", true);
+            m_anim.SetBool("isAttacking", false);
             transform.LookAt(_goal);
 
         }
@@ -75,6 +85,8 @@ public class FriendlyController : MonoBehaviour
         {
             if (_goal.GetComponent<CharacterStats>() != null) {
                 m_cs.Attack(_enemyFound.GetComponent<CharacterStats>());
+                m_anim.SetBool("isWalking", false);
+                m_anim.SetBool("isAttacking", true);
             }
             else {
                 m_currentState++;

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 ///Created using Code First's Observer Pattern example https://www.youtube.com/watch?v=oVAFvyICmbw
 
@@ -13,18 +14,18 @@ public class TimeManager : MonoBehaviour, ISubject
     /// <summary>
     /// The current time of day. Probably only day or night, but there's scope for different times of day.
     /// </summary>
-    public string TimeOfDay {
+    public TimeOfDay TimeOfDay {
         get { return _timeOfDay; }
         private set { _timeOfDay = value;
             Notify();
         }
     }
-    private string _timeOfDay;
+    private TimeOfDay _timeOfDay;
 
-
+    private TimeOfDay m_TimeOfDay;
     private void Start()
     {
-        TimeOfDay = "day";
+
     }
     /// <summary>
     /// Subscrives an observer
@@ -84,17 +85,37 @@ public class TimeManager : MonoBehaviour, ISubject
 
     public void ChangeTime()
     {
-        if (TimeOfDay == "day")
+        switch (TimeOfDay)
         {
-            TimeOfDay = "night";
-        } 
-        else if (_timeOfDay == "night")
-        {
-            TimeOfDay = "day";
+            case TimeOfDay.day:
+                TimeOfDay = TimeOfDay.night;
+                break;
+
+            case TimeOfDay.night:
+                TimeOfDay = TimeOfDay.day;
+                break;
+
+            default:
+                Debug.LogError("ERROR: Time of day was:" + TimeOfDay);
+                break;
         }
-        else
+    }
+
+    public void ChangeTime(TimeOfDay _time)
+    {
+        switch (_time)
         {
-            Debug.LogError("ERROR: TimeOfDay incorrectly set. Time of day is: " + TimeOfDay);
+            case TimeOfDay.night:
+                TimeOfDay = TimeOfDay.night;
+                break;
+
+            case TimeOfDay.day:
+                TimeOfDay = TimeOfDay.day;
+                break;
+
+            default:
+                Debug.LogError("ERROR: Time of day was:" + TimeOfDay);
+                break;
         }
     }
 }

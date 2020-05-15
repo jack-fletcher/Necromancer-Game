@@ -60,6 +60,11 @@ public enum Class_Type
     thief
 }
 
+public enum TimeOfDay
+{
+    day,
+    night
+}
 public class Enums : MonoBehaviour
 {
 }

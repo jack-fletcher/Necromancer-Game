@@ -89,9 +89,9 @@ public class NavigationManager : MonoBehaviour
     //}
 
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
-  
+        
         for (int i = 0; i < m_navigationPoints.Length; i++)
         {
 

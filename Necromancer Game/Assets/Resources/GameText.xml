@@ -8,7 +8,9 @@
 
       <Unit id="Guda">
         <Name id="Name"> Guda Halvdansson</Name>
-        <GraveText id="GraveText"> Guda Halvdansson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Guda Halvdansson
+2019-2020 
+      </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 1 </Hint1>
@@ -20,7 +22,8 @@
 
       <Unit id="Iarlabanki">
         <Name id="Name"> Iarlabanki Skeggsson </Name>
-        <GraveText id="GraveText"> Iarlabanki Skeggsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Iarlabanki Skeggsson
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -32,7 +35,8 @@
 
       <Unit id="Jarlabanki">
         <Name id="Name"> Jarlabanki Thorkelsson</Name>
-        <GraveText id="GraveText"> Jarlabanki Thorkelsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Jarlabanki Thorkelsson
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 1 </Hint1>
@@ -44,7 +48,8 @@
 
       <Unit id="Hallfred ">
         <Name id="Name"> Hallfred Asgeirsson</Name>
-        <GraveText id="GraveText"> Hallfred Asgeirsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Hallfred Asgeirsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -56,7 +61,8 @@
 
       <Unit id="Throst ">
         <Name id="Name">Throst Æiriksson </Name>
-        <GraveText id="GraveText"> Throst Æiriksson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Throst Æiriksson
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -68,7 +74,8 @@
 
       <Unit id="Æsbiorn">
         <Name id="Name">Æsbiorn Ysoppasson </Name>
-        <GraveText id="GraveText"> Æsbiorn Ysoppasson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Æsbiorn Ysoppasson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -80,7 +87,8 @@
 
       <Unit id="Orrin">
         <Name id="Name">Orrin Marsson </Name>
-        <GraveText id="GraveText"> Orrin Marsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Orrin Marsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -92,7 +100,8 @@
 
       <Unit id="Ofieg">
         <Name id="Name">Ofieg Beinersson </Name>
-        <GraveText id="GraveText"> Ofieg Beinersson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ofieg Beinersson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -104,7 +113,8 @@
 
       <Unit id="Sigtrygg">
         <Name id="Name">Sigtrygg Asvaldsson </Name>
-        <GraveText id="GraveText"> Sigtrygg Asvaldsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Sigtrygg Asvaldsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -116,7 +126,8 @@
 
       <Unit id="Gunni ">
         <Name id="Name">Gunni Eysteinsson </Name>
-        <GraveText id="GraveText"> Gunni Eysteinsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Gunni Eysteinsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -126,57 +137,12 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Iogæir ">
-        <Name id="Name">Iogæir Brodd-Helgisson </Name>
-        <GraveText id="GraveText"> Iogæir Brodd-Helgisson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Blann ">
-        <Name id="Name">Blann Folkmarsson </Name>
-        <GraveText id="GraveText"> Blann Folkmarsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Snorri ">
-        <Name id="Name">Snorri Brondulfsson </Name>
-        <GraveText id="GraveText"> Snorri Brondulfsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Gardi ">
-        <Name id="Name">Gardi Kætiløysson </Name>
-        <GraveText id="GraveText"> Gardi Kætiløysson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
 
       <Unit id="Hallveig ">
         <Name id="Name">Hallveig Dunfjalldottir </Name>
-        <GraveText id="GraveText"> Hallveig Dunfjalldottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Hallveig Dunfjalldottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -188,7 +154,8 @@
 
       <Unit id="Torhild ">
         <Name id="Name">Torhild Olafdottir </Name>
-        <GraveText id="GraveText"> Torhild Olafdottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Torhild Olafdottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -200,7 +167,8 @@
 
       <Unit id="Thorfrid ">
         <Name id="Name">Thorfrid Øystendottir </Name>
-        <GraveText id="GraveText"> Thorfrid Øystendottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Thorfrid Øystendottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -212,7 +180,8 @@
 
       <Unit id="Tola ">
         <Name id="Name">Tola Gautidottir </Name>
-        <GraveText id="GraveText"> Tola Gautidottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Tola Gautidottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -224,7 +193,8 @@
 
       <Unit id="Ogn ">
         <Name id="Name">Ogn Isgautdottir </Name>
-        <GraveText id="GraveText"> Ogn Isgautdottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ogn Isgautdottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -236,7 +206,8 @@
 
       <Unit id="Bjorg ">
         <Name id="Name">Bjorg Ingjaldottir </Name>
-        <GraveText id="GraveText"> Bjorg Ingjaldottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Bjorg Ingjaldottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -249,7 +220,8 @@
 
       <Unit id="Yri ">
         <Name id="Name">Yri Liutdottir </Name>
-        <GraveText id="GraveText"> Yri Liutdottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Yri Liutdottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -261,7 +233,8 @@
 
       <Unit id="Gorm ">
         <Name id="Name">Gorm Styrkollrdottir </Name>
-        <GraveText id="GraveText"> Gorm Styrkollrdottir 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Gorm Styrkollrdottir 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -273,7 +246,8 @@
 
       <Unit id="Magnus ">
         <Name id="Name">Magnus Biorsson </Name>
-        <GraveText id="GraveText"> Magnus Biorsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Magnus Biorsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -285,7 +259,8 @@
 
       <Unit id="Ubbein ">
         <Name id="Name">Ubbein Valgardsson </Name>
-        <GraveText id="GraveText"> Ubbein Valgardsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ubbein Valgardsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -297,7 +272,8 @@
 
       <Unit id="Sigewine">
         <Name id="Name">Sigewine Ospaksson </Name>
-        <GraveText id="GraveText"> Sigewine Ospaksson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Sigewine Ospaksson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -309,7 +285,8 @@
 
       <Unit id="Gunnbjorn ">
         <Name id="Name">Gunnbjorn Ærinmundsson </Name>
-        <GraveText id="GraveText"> Gunnbjorn Ærinmundsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Gunnbjorn Ærinmundsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -321,7 +298,8 @@
 
       <Unit id="Sveni">
         <Name id="Name">Sveni Korisson </Name>
-        <GraveText id="GraveText"> Sveni Korisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Sveni Korisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -333,7 +311,8 @@
 
       <Unit id="Asfrith">
         <Name id="Name">Asfrith Isleifsson </Name>
-        <GraveText id="GraveText"> Asfrith Isleifsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Asfrith Isleifsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -345,7 +324,8 @@
 
       <Unit id="Leiknir">
         <Name id="Name">Leiknir Northrisson </Name>
-        <GraveText id="GraveText"> Leiknir Northrisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Leiknir Northrisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -357,7 +337,8 @@
 
       <Unit id="Svan">
         <Name id="Name">Svan Isisson </Name>
-        <GraveText id="GraveText"> Svan Isisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Svan Isisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -370,7 +351,8 @@
 
       <Unit id="Hrifla">
         <Name id="Name">Hrifla Audgislisson </Name>
-        <GraveText id="GraveText"> Hrifla Audgislisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Hrifla Audgislisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -383,7 +365,8 @@
 
       <Unit id="Northri ">
         <Name id="Name">Northri Asgautsson </Name>
-        <GraveText id="GraveText"> Northri Asgautsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Northri Asgautsson
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -396,7 +379,8 @@
 
       <Unit id="Guthrum">
         <Name id="Name">Guthrum Gudbrandsson </Name>
-        <GraveText id="GraveText"> Guthrum Gudbrandsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Guthrum Gudbrandsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -408,7 +392,8 @@
 
       <Unit id="Thorarin">
         <Name id="Name">Thorarin Hromundsson </Name>
-        <GraveText id="GraveText"> Thorarin Hromundsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Thorarin Hromundsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -421,7 +406,8 @@
 
       <Unit id="Ingi">
         <Name id="Name">Ingi Ornsson </Name>
-        <GraveText id="GraveText"> Ingi Ornsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ingi Ornsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -433,7 +419,8 @@
 
       <Unit id="Thrain">
         <Name id="Name">Thrain Skœdirsson </Name>
-        <GraveText id="GraveText"> Thrain Skœdirsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Thrain Skœdirsson
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -445,7 +432,8 @@
 
       <Unit id="Eydis">
         <Name id="Name">Eydis Vandilsson </Name>
-        <GraveText id="GraveText"> Eydis Vandilsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Eydis Vandilsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -458,7 +446,8 @@
 
       <Unit id="Aron">
         <Name id="Name">Aron Unisson </Name>
-        <GraveText id="GraveText"> Aron Unisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Aron Unisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -470,7 +459,8 @@
 
       <Unit id="Ondott">
         <Name id="Name">Ondott Fargrimsson </Name>
-        <GraveText id="GraveText"> Ondott Fargrimsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ondott Fargrimsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -482,7 +472,8 @@
 
       <Unit id="Øybiorn">
         <Name id="Name">Øybiorn Mannisson </Name>
-        <GraveText id="GraveText"> Øybiorn Mannisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Øybiorn Mannisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -494,7 +485,8 @@
 
       <Unit id="Gufi">
         <Name id="Name">Gufi Gudleifsson </Name>
-        <GraveText id="GraveText"> Gufi Gudleifsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Gufi Gudleifsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -505,9 +497,17 @@
       </Unit>
 
 
-      <Unit id="Vigbjord">
-        <Name id="Name">Vigbjord Hragnelfsson </Name>
-        <GraveText id="GraveText"> Vigbjord Hragnelfsson 2019-2020 </GraveText>
+
+
+
+    </UnitClass>
+
+    <UnitClass id="berserker">
+
+      <Unit id="Farthegn">
+        <Name id="Name">Farthegn Gunnaldsson </Name>
+        <GraveText id="GraveText"> Farthegn Gunnaldsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -517,10 +517,10 @@
         </VillagerHints>
       </Unit>
 
-
-      <Unit id="Lopt">
-        <Name id="Name">Lopt Sigewulfsson </Name>
-        <GraveText id="GraveText"> Lopt Sigewulfsson 2019-2020 </GraveText>
+      <Unit id="Sverting">
+        <Name id="Name">Sverting Hlennisson </Name>
+        <GraveText id="GraveText"> Sverting Hlennisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -530,9 +530,10 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Hreitharr">
-        <Name id="Name">Hreitharr Olvirsson </Name>
-        <GraveText id="GraveText"> Hreitharr Olvirsson 2019-2020 </GraveText>
+      <Unit id="Haf">
+        <Name id="Name">Haf Njalsson </Name>
+        <GraveText id="GraveText"> Haf Njalsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -542,9 +543,10 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Sigenoth">
-        <Name id="Name">Sigenoth Sibbisson </Name>
-        <GraveText id="GraveText"> Sigenoth Sibbisson 2019-2020 </GraveText>
+      <Unit id="Ljot">
+        <Name id="Name">Ljot Starolfsson </Name>
+        <GraveText id="GraveText"> Ljot Starolfsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -554,70 +556,14 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Mursi">
-        <Name id="Name">Mursi Sigeweardsson </Name>
-        <GraveText id="GraveText"> Mursi Sigeweardsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
+    </UnitClass>
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Oleif">
-        <Name id="Name">Oleif Thorgrimsson </Name>
-        <GraveText id="GraveText"> Oleif Thorgrimsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-
-      <Unit id="Hreida">
-        <Name id="Name">Hreida Alriksson </Name>
-        <GraveText id="GraveText"> Hreida Alriksson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Ornulf">
-        <Name id="Name">Ornulf Brondulfsson </Name>
-        <GraveText id="GraveText"> Ornulf Brondulfsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Hrafnvartr">
-        <Name id="Name">Hrafnvartr Hrodgeirsson </Name>
-        <GraveText id="GraveText"> Hrafnvartr Hrodgeirsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
+    <UnitClass id="thief">
 
       <Unit id="Audgisil">
         <Name id="Name">Audgisil Vestgeirsson </Name>
-        <GraveText id="GraveText"> Audgisil Vestgeirsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Audgisil Vestgeirsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -630,7 +576,8 @@
 
       <Unit id="Ingimar">
         <Name id="Name">Ingimar Mursisson </Name>
-        <GraveText id="GraveText"> Ingimar Mursisson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ingimar Mursisson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -643,7 +590,8 @@
 
       <Unit id="Ludin">
         <Name id="Name">Ludin Herjolfsson </Name>
-        <GraveText id="GraveText"> Ludin Herjolfsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Ludin Herjolfsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -656,7 +604,8 @@
 
       <Unit id="Isulf">
         <Name id="Name">Isulf Geirsteinsson </Name>
-        <GraveText id="GraveText"> Isulf Geirsteinsson 2019-2020 </GraveText>
+        <GraveText id="GraveText"> Isulf Geirsteinsson 
+2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
           <Hint1> XML Dialogue 4 </Hint1>
@@ -665,64 +614,6 @@
 
         </VillagerHints>
       </Unit>
-
-      <Unit id="Farthegn">
-        <Name id="Name">Farthegn Gunnaldsson </Name>
-        <GraveText id="GraveText"> Farthegn Gunnaldsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Sverting">
-        <Name id="Name">Sverting Hlennisson </Name>
-        <GraveText id="GraveText"> Sverting Hlennisson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Haf">
-        <Name id="Name">Haf Njalsson </Name>
-        <GraveText id="GraveText"> Haf Njalsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-
-      <Unit id="Ljot">
-        <Name id="Name">Ljot Starolfsson </Name>
-        <GraveText id="GraveText"> Ljot Starolfsson 2019-2020 </GraveText>
-        <VillagerHints id="Hints">
-
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
-
-        </VillagerHints>
-      </Unit>
-    </UnitClass>
-
-    <UnitClass id="berserker">
-
-
-
-    </UnitClass>
-
-    <UnitClass id="thief">
-
 
     </UnitClass>
 
@@ -733,17 +624,193 @@
 
     <UnitClass id="knight">
 
+      <Unit id="Mursi">
+        <Name id="Name">Mursi Sigeweardsson </Name>
+        <GraveText id="GraveText"> Mursi Sigeweardsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Oleif">
+        <Name id="Name">Oleif Thorgrimsson </Name>
+        <GraveText id="GraveText"> Oleif Thorgrimsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Hreida">
+        <Name id="Name">Hreida Alriksson </Name>
+        <GraveText id="GraveText"> Hreida Alriksson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Ornulf">
+        <Name id="Name">Ornulf Brondulfsson </Name>
+        <GraveText id="GraveText"> Ornulf Brondulfsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Hrafnvartr">
+        <Name id="Name">Hrafnvartr Hrodgeirsson </Name>
+        <GraveText id="GraveText"> Hrafnvartr Hrodgeirsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
 
 
     </UnitClass>
 
     <UnitClass id="berserker">
 
+      <Unit id="Iogæir ">
+        <Name id="Name">Iogæir Brodd-Helgisson </Name>
+        <GraveText id="GraveText">
+          Iogæir Brodd-Helgisson
+2019-2020
+        </GraveText>
+        <VillagerHints id="Hints">
 
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Blann ">
+        <Name id="Name">Blann Folkmarsson </Name>
+        <GraveText id="GraveText">
+          Blann Folkmarsson
+          2019-2020
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Snorri ">
+        <Name id="Name">Snorri Brondulfsson </Name>
+        <GraveText id="GraveText">
+          Snorri Brondulfsson
+          2019-2020
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Gardi ">
+        <Name id="Name">Gardi Kætiløysson </Name>
+        <GraveText id="GraveText">
+          Gardi Kætiløysson
+          2019-2020
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
 
     </UnitClass>
 
     <UnitClass id="thief">
+
+      <Unit id="Vigbjord">
+        <Name id="Name">Vigbjord Hragnelfsson </Name>
+        <GraveText id="GraveText"> Vigbjord Hragnelfsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Lopt">
+        <Name id="Name">Lopt Sigewulfsson </Name>
+        <GraveText id="GraveText"> Lopt Sigewulfsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Hreitharr">
+        <Name id="Name">Hreitharr Olvirsson </Name>
+        <GraveText id="GraveText"> Hreitharr Olvirsson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Sigenoth">
+        <Name id="Name">Sigenoth Sibbisson </Name>
+        <GraveText id="GraveText"> Sigenoth Sibbisson 
+2019-2020 </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> XML Dialogue 4 </Hint1>
+          <Hint2> XML Dialogue 5 </Hint2>
+          <Hint3> XML Dialogue 6 </Hint3>
+
+        </VillagerHints>
+      </Unit>
 
 
     </UnitClass>

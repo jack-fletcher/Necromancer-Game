@@ -13,6 +13,19 @@ public class Grave : MonoBehaviour
     /// The health of the grave - Dictates whether it should break apart or not.
     /// </summary>
     private float m_health;
+
+    [SerializeField] private GameObject m_head = null;
+    [SerializeField] private GameObject m_leftArm = null;
+    [SerializeField] private GameObject m_rightArm = null;
+    [SerializeField] private GameObject m_torso = null;
+    [SerializeField] private GameObject m_leftLeg = null;
+    [SerializeField] private GameObject m_rightLeg = null;
+
+    [SerializeField] private GameObject m_damagedStage1 = null;
+    [SerializeField] private GameObject m_damagedStage2 = null;
+
+
+
     /// <summary>
     /// 
     /// </summary>
@@ -32,10 +45,10 @@ public class Grave : MonoBehaviour
     void Update()
     {
 #if UNITY_EDITOR
-        //if (Input.GetKeyDown(KeyCode.Q))
-        //{
-        //    TakeDamage(5);
-        //}
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            TakeDamage(1);
+        }
 
 #endif
     }
@@ -46,19 +59,50 @@ public class Grave : MonoBehaviour
     /// <param name="_ct"></param>
     public void SetBodyPart(Part_Type _pt, Class_Type _ct)
     {
+        switch (_pt)
+        {
+            case Part_Type.head:
+                m_bodyPart = m_head;
+                break;
+            case Part_Type.left_arm:
+                m_bodyPart = m_leftArm;
 
+                break;
+            case Part_Type.right_arm:
+                m_bodyPart = m_rightArm;
+
+                break;
+            case Part_Type.left_leg:
+                m_bodyPart = m_leftLeg;
+
+                break;
+            case Part_Type.right_leg:
+                m_bodyPart = m_rightLeg;
+
+                break;
+            case Part_Type.torso:
+                m_bodyPart = m_torso;
+
+                break;
+
+            default:
+                Debug.LogError("_pt was incorrectly formatted. Output was: " + _pt.ToString());
+                break;
+        }
+
+        m_bodyPart = Instantiate(m_bodyPart);
         ///Test/debug
-        m_bodyPart = GameObject.CreatePrimitive(PrimitiveType.Cube);
+     //   m_bodyPart = GameObject.CreatePrimitive(PrimitiveType.Cube);
         ///set the new body part to the position of this gameobject
         m_bodyPart.transform.position = transform.position;
-        m_bodyPart.AddComponent<BodyPart>();
-        m_bodyPart.AddComponent<Interactable>();
-        m_bodyPart.AddComponent<Throwable>();
+        //m_bodyPart.AddComponent<BodyPart>();
+        //m_bodyPart.AddComponent<Interactable>();
+        //m_bodyPart.AddComponent<Throwable>();
         Rigidbody rb = m_bodyPart.GetComponent<Rigidbody>();
-        rb.useGravity = false;
-        rb.constraints = RigidbodyConstraints.FreezeAll;
-        m_bodyPart.GetComponent<BodyPart>().m_part_Type = _pt;
-        m_bodyPart.GetComponent<BodyPart>().m_class_Type = _ct;
+   //     rb.useGravity = false;
+   //     rb.constraints = RigidbodyConstraints.FreezeAll;
+   //     m_bodyPart.GetComponent<BodyPart>().m_part_Type = _pt;
+   //     m_bodyPart.GetComponent<BodyPart>().m_class_Type = _ct;
         m_bodyPart.transform.SetParent(transform);
         m_bodyPart.SetActive(false);
 
@@ -80,6 +124,7 @@ public class Grave : MonoBehaviour
         }
         else if (m_health <= 2)
         {
+          //  GetComponent<MeshFilter>().mesh = m_damagedStage2.GetComponent<MeshFilter>().sharedMesh;
 #if UNITY_EDITOR
             ///Debug check
             rend.material.color = Color.blue;
@@ -87,6 +132,7 @@ public class Grave : MonoBehaviour
         }
         else if (m_health <= 4)
         {
+           // GetComponent<MeshFilter>().mesh = m_damagedStage1.GetComponent<MeshFilter>().sharedMesh; 
 #if UNITY_EDITOR
             ///Debug check
             rend.material.color = Color.red;
@@ -100,7 +146,7 @@ public class Grave : MonoBehaviour
     private void Die()
     {
         GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<MeshCollider>().enabled = false;
         m_bodyPart.SetActive(true);
     }
 
@@ -134,7 +180,7 @@ public class Grave : MonoBehaviour
     {
         Weapon _weapon = other.gameObject.GetComponent<Weapon>();
         //If the object has the weapon script
-        if (_weapon != null)
+        if (_weapon != null && _weapon.m_dealsGraveDamage == true)
         {
             TakeDamage(other.gameObject.GetComponent<Weapon>().m_damage);
             Debug.Log("Collided");

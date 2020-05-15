@@ -79,6 +79,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator ShowNextSentence(TextMeshProUGUI _content)
     {
+
         yield return new WaitForSeconds(3f);
         DisplayNextSentence(_content);
     }

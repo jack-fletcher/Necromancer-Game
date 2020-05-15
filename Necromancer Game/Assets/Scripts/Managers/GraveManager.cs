@@ -35,7 +35,12 @@ public class GraveManager : MonoBehaviour
     /// </summary>
     private void Setup()
     {
-        int counter = 1;
+        int counter = 0;
+
+        int _knightCounter = 0;
+        int _bersCounter = 0;
+        int _thiefCounter = 0;
+
         foreach (GameObject go in m_graveSpots)
         {
             Grave _grave = go.GetComponentInChildren<Grave>();
@@ -45,13 +50,29 @@ public class GraveManager : MonoBehaviour
             int idx = UnityEngine.Random.Range(0, Enum.GetValues(typeof(Class_Type)).Length);
             Class_Type _ct = (Class_Type)idx;
 
+            switch (_ct)
+            {
+                case Class_Type.berserker:
+                    _bersCounter++;
+                    counter = _bersCounter;
+                    break;
+                case Class_Type.knight:
+                    _knightCounter++;
+                    counter = _knightCounter;
+
+                    break;
+
+                case Class_Type.thief:
+                    _thiefCounter++;
+                    counter = _thiefCounter;
+
+                    break;
+            }
             ///Debug
-            _ct = Class_Type.knight;
+        //    _ct = Class_Type.knight;
             ///Set text on grave
             string _ctName = _ct.ToString();
 
-
-            counter++;
             string query = $"(//*[@id='{_ctName}']//*[@id='GraveText'])[{counter}]";
             string graveText = XMLManager.Instance.ReadSingleNodeData(query);
 

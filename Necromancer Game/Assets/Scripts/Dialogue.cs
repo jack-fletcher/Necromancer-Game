@@ -33,7 +33,6 @@ public class Dialogue
     public void SetSentences()
     {
         //m_sentences = XMLManager.Instance.ReadSentenceData(m_name, "Hints");
-        Debug.Log(m_name);
 
         if (m_dialogueType == Dialogue_Types.Part_Hint)
         {
@@ -46,7 +45,7 @@ public class Dialogue
         }
         else
         {
-            Debug.Log("Dialogue type not correct: Output was: " + m_dialogueType.ToString());
+            Debug.LogError("Dialogue type not correct: Output was: " + m_dialogueType.ToString());
         }
     }
 }

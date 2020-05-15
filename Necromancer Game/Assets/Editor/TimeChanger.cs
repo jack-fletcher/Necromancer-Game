@@ -11,17 +11,23 @@ public class TimeChanger : EditorWindow
     /// The timescale to set the timescale to.
     /// </summary>
     private float m_TimeScale = 1;
-    [MenuItem("Window/TimeChanger/Change TimeScale")]
+    /// <summary>
+    /// 
+    /// </summary>
+    [SerializeField] private TimeManager m_time = null;
+    [MenuItem("Tools/TimeChanger/Change TimeScale")]
+
     /// <summary>
     /// Shows the window.
     /// </summary>
     public static void ShowWindow()
     {
-        EditorWindow.GetWindow(typeof(TimeChanger));
-        
+        //Get existing open window or if none, make a new one:
+        TimeChanger window = (TimeChanger)EditorWindow.GetWindow(typeof(TimeChanger));
+        window.Show();
+
         
     }
-
     /// <summary>
     /// Creates the editor GUI.
     /// </summary>
@@ -35,6 +41,12 @@ public class TimeChanger : EditorWindow
         {
             SetTime(m_TimeScale);
         }
+
+        m_time = (TimeManager)EditorGUILayout.ObjectField(m_time, typeof(TimeManager), true);
+        if (GUILayout.Button("Change Time of Day"))
+        {
+            ChangeTime();
+        }
     }
     /// <summary>
     /// Sets the timescale to the passed integer.
@@ -43,5 +55,10 @@ public class TimeChanger : EditorWindow
     private void SetTime(float TimeScale)
     {
         Time.timeScale = TimeScale;
+    }
+
+    private void ChangeTime()
+    {
+        m_time.ChangeTime();
     }
 }

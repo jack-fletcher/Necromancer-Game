@@ -58,7 +58,7 @@ namespace Valve.VR.InteractionSystem
 				return _instance;
 			}
 		}
-
+        
 
 		//-------------------------------------------------
 		// Get the number of active Hands.

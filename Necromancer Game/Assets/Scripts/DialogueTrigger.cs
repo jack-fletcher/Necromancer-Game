@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 /// <summary>
 /// Derived from Brackeys "How to make a dialogue system in Unity" https://www.youtube.com/watch?v=_nRzoTzeyxU&t=3s
@@ -34,10 +35,10 @@ public class DialogueTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == "Player")
+        if (other.gameObject == Player.instance.gameObject)
         {
             m_canvas.enabled = true;
-            ScaleUp();
+            StartCoroutine("ScaleUp");
         }
         else
         {
@@ -46,7 +47,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject == Player.instance.gameObject)
         {
             DialogueManager.Instance.EndDialogue();
             m_canvas.enabled = false;
@@ -60,13 +61,25 @@ public class DialogueTrigger : MonoBehaviour
 
     IEnumerator ScaleUp()
     {
+        float _animLength = 0;
+
+
         m_anim.SetTrigger("ScaleUp");
+        AnimationClip[] _animations = m_anim.runtimeAnimatorController.animationClips;
 
-        AnimatorClipInfo[] _currentClipInfo = m_anim.GetCurrentAnimatorClipInfo(0);
+        foreach (var item in _animations)
+        {
+            if (item.name == "Dialogue_ScaleUp")
+            {
+                _animLength = item.length;
+            }
+        }
 
-        float _animLength = _currentClipInfo[0].clip.length;
+       // AnimatorClipInfo[] _currentClipInfo = m_anim.GetCurrentAnimatorClipInfo(0);
+      //  Debug.Log(_currentClipInfo.Length);
+       //_animLength = _currentClipInfo[0].clip.length;
 
-        yield return new WaitForSeconds(_animLength);
+        yield return new WaitForSeconds(0);
             TriggerDialogue();
             Debug.Log("Worked");
 

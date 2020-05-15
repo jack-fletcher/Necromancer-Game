@@ -74,7 +74,6 @@ public class XMLManager : MonoBehaviour
             for (int i = 0; i < _nodeList.Count; i++)
             {
                 _elemLists[i] = _nodeList[i].InnerXml;
-                Debug.Log(_elemLists[i]);
             }
             return _elemLists;
         }

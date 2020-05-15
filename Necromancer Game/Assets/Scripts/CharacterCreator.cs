@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class CharacterCreator : MonoBehaviour
 {
@@ -86,6 +87,7 @@ public void CheckForParts()
             }
 
             CreateMinion(_minionToCreate);
+            
         }
     }
 
@@ -130,6 +132,9 @@ public void CheckForParts()
                 break;
 
         }
+        Player.instance.GetComponentInChildren<UnitInventory>().m_units.Add(_minion);
+        _minion.SetActive(false);
+
         _minion.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         m_snapPoints.ClearParts();
 

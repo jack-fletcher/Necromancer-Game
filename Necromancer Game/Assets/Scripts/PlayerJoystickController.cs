@@ -42,8 +42,8 @@ public class PlayerJoystickController : MonoBehaviour
         //Get the direction the player is currently facing
         Vector3 dir = player.hmdTransform.TransformDirection(new Vector3(m_input[0].axis.x, 0, m_input[0].axis.y));
 
-        ///Move the player by the value returned by joystick movement, * time delta * speed - gravity
-        m_cc.Move(m_speed * Time.deltaTime * Vector3.ProjectOnPlane(dir, Vector3.up) - Physics.gravity * Time.deltaTime);
+        ///Move the player by the value returned by joystick movement, * time delta * speed + gravity
+        m_cc.Move(m_speed * Time.deltaTime * Vector3.ProjectOnPlane(dir, Vector3.up) + Physics.gravity * Time.deltaTime);
         //==========================
         //Right Joystick
         //==========================
