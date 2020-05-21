@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private bool m_patrols = false;
     [Tooltip("Does the unit move towards the enemy spawn? ")]
     [SerializeField] private bool m_MovesTowardsEnemyStart = false;
+
+    [SerializeField] private bool m_stationary = true;
     public int m_currentState;
     private void Awake()
     {
@@ -37,8 +39,6 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-            SimpleMove(m_currentState);
 
           //  m_anim.SetBool("isWalking", false);
     }
@@ -110,10 +110,13 @@ public class EnemyController : MonoBehaviour
             else if (m_currentState >= 0)
             {
                 m_currentState--;
+                m_anim.SetBool("isWalking", false);
+                m_anim.SetBool("isAttacking", false);
             }
             else
             {
                 m_anim.SetBool("isWalking", false);
+                m_anim.SetBool("isAttacking", false);
             }
         }
 

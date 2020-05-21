@@ -1256,7 +1256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_patrols: 0
-  m_MovesTowardsEnemyStart: 0
+  m_MovesTowardsEnemyStart: 1
+  m_stationary: 1
   m_currentState: 0
 --- !u!1 &4891790988837672705
 GameObject:
@@ -2205,16 +2206,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2631499803654950791, guid: f3fedcfe0ac6ec54fbdf51f48ff8909b,
-        type: 3}
-      propertyPath: m_cc
-      value: 
-      objectReference: {fileID: 5507322310573953035}
     - target: {fileID: 2631499805429761362, guid: f3fedcfe0ac6ec54fbdf51f48ff8909b,
         type: 3}
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2631499803654950791, guid: f3fedcfe0ac6ec54fbdf51f48ff8909b,
+        type: 3}
+      propertyPath: m_cc
+      value: 
+      objectReference: {fileID: 5507322310573953035}
     - target: {fileID: 2631499803767926479, guid: f3fedcfe0ac6ec54fbdf51f48ff8909b,
         type: 3}
       propertyPath: m_Layer

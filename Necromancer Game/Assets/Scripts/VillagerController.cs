@@ -15,7 +15,7 @@ public class VillagerController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //transform.LookAt(other.gameObject.transform);
+           // transform.LookAt(other.gameObject.transform);
         }
     }
 }

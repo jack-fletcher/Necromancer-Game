@@ -14,11 +14,17 @@ public class TeleportToArea : MonoBehaviour
 
     [SerializeField] private Canvas m_canvas = null;
 
+    [SerializeField] private AudioSource m_doorSound = null;
     private void Start()
     {
         if (m_useCanvas || m_canvas != null)
         {
             m_canvas.enabled = false;
+        }
+
+        if (this.GetComponent<AudioSource>() != null)
+        {
+            m_doorSound = this.GetComponent<AudioSource>();
         }
     }
 
@@ -33,6 +39,10 @@ public class TeleportToArea : MonoBehaviour
             }
             else
             {
+                if (m_doorSound != null)
+                {
+                    m_doorSound.Play();
+                }
                 EnterRegion(other.gameObject);
             }
         }
@@ -52,7 +62,7 @@ public class TeleportToArea : MonoBehaviour
 
     public void EnterRegion()
     {
-        StartCoroutine("FadeOut", Player.instance);
+        StartCoroutine("FadeOut", Player.instance.gameObject);
     }
     IEnumerator FadeOut(GameObject target)
     {

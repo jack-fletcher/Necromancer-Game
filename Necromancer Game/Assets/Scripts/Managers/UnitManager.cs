@@ -97,7 +97,11 @@ public class UnitManager : MonoBehaviour
 
         //CreateUnits();
     }
-
+    public void CreateUnits()
+    {
+        CreateEnemyUnits();
+        CreateFriendlyUnits();
+    }
     private void CreateEnemyUnits()
     {
         int counter = 0;
@@ -130,7 +134,7 @@ public class UnitManager : MonoBehaviour
     }
 
 
-    public void CreateFriendlyUnits()
+    private void CreateFriendlyUnits()
     {
         m_friendlyParent = new GameObject();
         m_friendlyParent.name = "Friendly Units";
@@ -190,6 +194,8 @@ public class UnitManager : MonoBehaviour
     private void EndGameLoss()
     {
         Debug.Log("Lost Game");
+        TeleportToArea _tp = GetComponent<TeleportToArea>();
+        _tp.EnterRegion();
     }
 }
 

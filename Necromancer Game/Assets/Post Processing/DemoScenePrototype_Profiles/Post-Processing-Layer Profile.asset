@@ -63,6 +63,43 @@ MonoBehaviour:
   fastMode:
     overrideState: 0
     value: 0
+--- !u!114 &-3687195916383941723
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34fa72bd4185749832024e9c8010bf, type: 3}
+  m_Name: ScreenSpaceReflections
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  preset:
+    overrideState: 0
+    value: 2
+  maximumIterationCount:
+    overrideState: 0
+    value: 16
+  resolution:
+    overrideState: 0
+    value: 0
+  thickness:
+    overrideState: 0
+    value: 8
+  maximumMarchDistance:
+    overrideState: 0
+    value: 100
+  distanceFade:
+    overrideState: 0
+    value: 0.5
+  vignette:
+    overrideState: 0
+    value: 0.5
 --- !u!114 &-612757890944321996
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -107,45 +144,8 @@ MonoBehaviour:
   - {fileID: 4445153926361211755}
   - {fileID: 3200847308399123967}
   - {fileID: -612757890944321996}
-  - {fileID: 8531288344159386829}
-  - {fileID: 765529698123239684}
---- !u!114 &765529698123239684
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a34fa72bd4185749832024e9c8010bf, type: 3}
-  m_Name: ScreenSpaceReflections
-  m_EditorClassIdentifier: 
-  active: 0
-  enabled:
-    overrideState: 1
-    value: 1
-  preset:
-    overrideState: 1
-    value: 2
-  maximumIterationCount:
-    overrideState: 1
-    value: 16
-  resolution:
-    overrideState: 1
-    value: 0
-  thickness:
-    overrideState: 1
-    value: 8
-  maximumMarchDistance:
-    overrideState: 1
-    value: 100
-  distanceFade:
-    overrideState: 1
-    value: 0.5
-  vignette:
-    overrideState: 1
-    value: 0.5
+  - {fileID: 5709648547768039085}
+  - {fileID: -3687195916383941723}
 --- !u!114 &1465313237778266372
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -408,13 +408,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 1, y: 0.999999, z: 0.99999934, w: 0}
+    value: {x: 0.98466504, y: 0.99710876, z: 1, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 0.9639741, y: 1, z: 0.9880022, w: 0}
+    value: {x: 0.98189616, y: 0.99428636, z: 1, w: 0}
   gain:
     overrideState: 1
-    value: {x: 0.99359125, y: 0.9812788, z: 1, w: 0}
+    value: {x: 0.9705904, y: 0.9848606, z: 1, w: 0}
   masterCurve:
     overrideState: 1
     value:
@@ -1643,7 +1643,7 @@ MonoBehaviour:
   lumContrib:
     overrideState: 1
     value: 0.8
---- !u!114 &8531288344159386829
+--- !u!114 &5709648547768039085
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1660,30 +1660,30 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   mode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   color:
-    overrideState: 0
+    overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
   center:
-    overrideState: 0
+    overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
-    overrideState: 0
+    overrideState: 1
     value: 0
   smoothness:
-    overrideState: 0
+    overrideState: 1
     value: 0.2
   roundness:
-    overrideState: 0
+    overrideState: 1
     value: 1
   rounded:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   mask:
-    overrideState: 0
+    overrideState: 1
     value: {fileID: 0}
     defaultState: 1
   opacity:
-    overrideState: 0
+    overrideState: 1
     value: 1

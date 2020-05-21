@@ -12,6 +12,7 @@ public class EnableDisableTimeOfDay : MonoBehaviour, IObserver
     [SerializeField] private TimeOfDay m_activeTime = TimeOfDay.day;
 
     [SerializeField] private GameObject[] m_objectsToCheck = null;
+
     public void UpdateState(ISubject _subject)
     {
         EnableDisable();

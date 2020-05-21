@@ -18,7 +18,8 @@ public class MenuPotion : MonoBehaviour
 
     public virtual void OnPotionActivate()
     {
-        SceneManager.LoadScene(m_nameOfScene);
+        
+       StartCoroutine(LoadScene());
     }
 
     public void FadeIn(Color color, int time)
@@ -33,5 +34,14 @@ public class MenuPotion : MonoBehaviour
         yield return new WaitForSeconds(time);
         Valve.VR.SteamVR_Fade.Start(Color.clear, time);
 
+    }
+    public IEnumerator LoadScene()
+    {
+        AsyncOperation _asyncLoad = SceneManager.LoadSceneAsync(m_nameOfScene);
+
+        while (!_asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
