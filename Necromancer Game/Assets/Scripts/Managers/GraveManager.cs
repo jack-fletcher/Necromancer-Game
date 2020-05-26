@@ -8,16 +8,12 @@ public class GraveManager : MonoBehaviour
 
 {
     /// <summary>
-    /// 
-    /// </summary>
-    private Grave m_grave;
-    /// <summary>
-    /// 
+    /// A reference to all graves within the scene
     /// </summary>
     private GameObject[] m_graveSpots;
 
     /// <summary>
-    /// 
+    /// Occurs when script is loaded and adds all graves to m_graveSpots
     /// </summary>
     private void Awake()
     {
@@ -31,7 +27,7 @@ public class GraveManager : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Sets up each grave with a class and part type and adds text to the gravestone
     /// </summary>
     private void Setup()
     {

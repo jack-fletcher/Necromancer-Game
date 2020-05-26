@@ -5,7 +5,13 @@ using Valve.VR.InteractionSystem;
 
 public class MenuControlPotion : MenuPotion
 {
+    /// <summary>
+    /// Destination within the scene to move character to.
+    /// </summary>
     [SerializeField] private Transform m_destination = null;
+    /// <summary>
+    /// Overriden. When a potion is activated, fade out and move player.
+    /// </summary>
     public override void OnPotionActivate()
     {
         //Don't forget - RGB needs to be divided by 255 to get the 0-1 range
@@ -16,6 +22,11 @@ public class MenuControlPotion : MenuPotion
         StartCoroutine("Move", 1f);
     }
 
+    /// <summary>
+    /// Moves the play over time.
+    /// </summary>
+    /// <param name="time"> Time taken to move player </param>
+    /// <returns></returns>
     IEnumerator Move(int time)
     {
         GameObject _playerObject = Player.instance.gameObject;

@@ -35,14 +35,16 @@ public enum Attack_Type
 }
 
 /// <summary>
-/// 
+/// Types of dialogue that a villager can have
 /// </summary>
 public enum Dialogue_Types
 {
     Part_Hint,
     Defender_Hint
 }
-
+/// <summary>
+/// Types of body parts
+/// </summary>
 public enum Part_Type
 {
     head,
@@ -53,13 +55,18 @@ public enum Part_Type
     right_leg
 
 }
+/// <summary>
+/// Class types
+/// </summary>
 public enum Class_Type
 {
     knight,
     berserker,
     thief
 }
-
+/// <summary>
+/// Valid times of day
+/// </summary>
 public enum TimeOfDay
 {
     day,

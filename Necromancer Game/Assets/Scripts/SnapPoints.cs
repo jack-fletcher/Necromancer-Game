@@ -5,11 +5,22 @@ using Valve.VR.InteractionSystem;
 
 public class SnapPoints : MonoBehaviour
 {
+
     /// <summary>
-    /// 
+    /// The scale of the objects //TODO remove this
+    /// </summary>
+    [SerializeField] private Vector3 m_scale = new Vector3(0,0,0);
+    /// <summary>
+    /// Reference to empty gameobjects for each snap point within the game world
     /// </summary>
     public List<GameObject> m_Snappoints = new List<GameObject>();
+    /// <summary>
+    /// Reference to the players hands
+    /// </summary>
     private Hand[] m_hands;
+    /// <summary>
+    /// Reference to the character creator
+    /// </summary>
     private CharacterCreator m_cc;
     private void Awake()
     {
@@ -27,8 +38,10 @@ public class SnapPoints : MonoBehaviour
                 switch (other.GetComponent<BodyPart>().m_part_Type)
                 {
                     case Part_Type.head:
-
-                        DoThing(other.gameObject, m_Snappoints[0], Quaternion.Euler(0, 0, 0));
+                        if (CheckForChildren(m_Snappoints[0]) == false)
+                        {
+                            SetChild(other.gameObject, m_Snappoints[0], Quaternion.Euler(0, 0, 0));
+                        }
                         //foreach (Hand hand in m_hands)
                         //{
                         //    hand.DetachObject(other.gameObject);
@@ -41,10 +54,13 @@ public class SnapPoints : MonoBehaviour
                         //        other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         //        Destroy(other.gameObject.GetComponent<Throwable>());
                         //        other.transform.localScale = scale;                          
-                        
+
                         break;
                     case Part_Type.torso:
-                        DoThing(other.gameObject, m_Snappoints[5], Quaternion.Euler(3, 11, -2));
+                        if (CheckForChildren(m_Snappoints[5]) == false)
+                        {
+                            SetChild(other.gameObject, m_Snappoints[5], Quaternion.Euler(3, 11, -2));
+                        }
                         //foreach (Hand hand in m_hands)
                         //{
                         //    hand.DetachObject(other.gameObject);
@@ -57,10 +73,13 @@ public class SnapPoints : MonoBehaviour
                         //other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         //Destroy(other.gameObject.GetComponent<Throwable>());
                         //other.transform.localScale = scale;
-                        
-                            break;
+
+                        break;
                     case Part_Type.left_arm:
-                        DoThing(other.gameObject, m_Snappoints[2], Quaternion.Euler(0, 0, 236));
+                        if (CheckForChildren(m_Snappoints[2]) == false)
+                        {
+                            SetChild(other.gameObject, m_Snappoints[2], Quaternion.Euler(0, 0, 236));
+                        }
                         //foreach (Hand hand in m_hands)
                         //{
                         //    hand.DetachObject(other.gameObject);
@@ -73,10 +92,13 @@ public class SnapPoints : MonoBehaviour
                         //other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         //Destroy(other.gameObject.GetComponent<Throwable>());
                         //other.transform.localScale = scale;
-                        
+
                         break;
                     case Part_Type.right_arm:
-                        DoThing(other.gameObject, m_Snappoints[1], Quaternion.Euler(0, 0, 131));
+                        if (CheckForChildren(m_Snappoints[1]) == false)
+                        {
+                            SetChild(other.gameObject, m_Snappoints[1], Quaternion.Euler(0, 0, 131));
+                        }
                         //foreach (Hand hand in m_hands)
                         //{
                         //    hand.DetachObject(other.gameObject);
@@ -90,11 +112,15 @@ public class SnapPoints : MonoBehaviour
                         //Destroy(other.gameObject.GetComponent<Throwable>());
                         //other.transform.localScale = scale;
 
-                            
-                        
+
+
                         break;
                     case Part_Type.left_leg:
-                        DoThing(other.gameObject, m_Snappoints[3], Quaternion.Euler(0, 0, 7));
+
+                        if (CheckForChildren(m_Snappoints[3]) == false)
+                        {
+                            SetChild(other.gameObject, m_Snappoints[3], Quaternion.Euler(0, 0, 7));
+                        } 
                         //foreach (Hand hand in m_hands)
                         //{
                         //    hand.DetachObject(other.gameObject);
@@ -110,7 +136,10 @@ public class SnapPoints : MonoBehaviour
                         break;
                     case Part_Type.right_leg:
 
-                        DoThing(other.gameObject, m_Snappoints[4], Quaternion.Euler(0, 0, -3));
+                        if (CheckForChildren(m_Snappoints[4]) == false)
+                        {
+                            SetChild(other.gameObject, m_Snappoints[4], Quaternion.Euler(0, 0, -3));
+                        }
                         //foreach (Hand hand in m_hands)
                         //{
                         //    hand.DetachObject(other.gameObject);
@@ -137,7 +166,9 @@ public class SnapPoints : MonoBehaviour
 #endif
     }
 
-
+    /// <summary>
+    /// Clear parts in child GameObjects
+    /// </summary>
     public void ClearParts()
     {
         foreach (GameObject go in m_Snappoints)
@@ -148,14 +179,41 @@ public class SnapPoints : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// Check if object has children
+    /// </summary>
+    /// <param name="_parent">object to check</param>
+    /// <returns></returns>
+    private bool CheckForChildren(GameObject _parent)
+    {
+        ///If parent has children it can't have more
+        if (_parent.transform.childCount != 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
-    private void DoThing(GameObject _child, GameObject _newParent, Quaternion _rotation)
+    /// <summary>
+    /// Set object as child of new parent
+    /// </summary>
+    /// <param name="_child">child that is being reparented</param>
+    /// <param name="_newParent"> the new parent</param>
+    /// <param name="_rotation">quaternion rotation of object</param>
+    private void SetChild(GameObject _child, GameObject _newParent, Quaternion _rotation)
     {
         foreach (Hand hand in m_hands)
         {
             hand.DetachObject(_child);
         }
-        Vector3 scale = _child.transform.localScale;
+
+        //TODO: This should work how it is, but for now this should be set manually to 50,50,50 as that's the normal scale of objects.
+        //Will allow this to be set within the editor to make it easier.
+        Vector3 scale = m_scale;
+       // Vector3 scale = _child.transform.localScale;
         _child.gameObject.transform.SetParent(_newParent.transform);
         _child.gameObject.transform.position = _newParent.transform.position;
         _child.gameObject.transform.rotation = _rotation;

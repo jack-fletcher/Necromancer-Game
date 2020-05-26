@@ -6,25 +6,56 @@ using TMPro;
 public class GraveyardGuard : MonoBehaviour
 {
     [Header("Pathfinding")]
+    ///Scan radius of GameObject
     [SerializeField] private int m_scanRadius = 0;
+    /// <summary>
+    /// The points the guard will patrol between
+    /// </summary>
     [SerializeField] private GameObject[] m_patrolPoints = null;
+    /// <summary>
+    /// Gameobject to signify the eye level of guard
+    /// </summary>
     [SerializeField] private Transform m_eyeLevel = null;
+    /// <summary>
+    /// The point to teleport the player to upon being found.
+    /// </summary>
     [SerializeField] private TeleportToArea m_tp = null;
     [Header("Unit Stats")]
+    ///Reference to a character controller
     [SerializeField] private CharacterController m_cc = null;
+    /// <summary>
+    /// Start point within his navigation array
+    /// </summary>
     [SerializeField] private int m_startPoint = 0;
+    /// <summary>
+    /// The current navigation point state
+    /// </summary>
     [SerializeField] private int m_currentState = 0;
+    /// <summary>
+    /// The current movement speed of the guard
+    /// </summary>
      private int m_movementSpeed = 0;
+    /// <summary>
+    /// Base movement speed of the guard
+    /// </summary>
     [SerializeField] private int m_baseMovementSpeed = 0;
+    /// <summary>
+    /// The high alert movement speed of the guard
+    /// </summary>
     [SerializeField] private int m_highAlertSpeed = 0;
 
 
     
     [Header("Canvas Variables ")]
+    ///Reference to the canvas GameObject attached to the guard
     [SerializeField] private Canvas m_textCanvas = null;
-
+    /// <summary>
+    /// Reference to the text on canvas gameobject
+    /// </summary>
     [SerializeField] private TextMeshProUGUI m_text = null;
-
+    /// <summary>
+    /// bool to specify whether the player was seen recently
+    /// </summary>
     [SerializeField] private bool m_wasUnitLastSeen = false;
     // Start is called before the first frame update
     void Start()
@@ -40,6 +71,10 @@ public class GraveyardGuard : MonoBehaviour
         MoveBetweenPoints(m_currentState);
     }
 
+    /// <summary>
+    /// Moves the guard between each point in his patrol points array, by moving to the goal index.
+    /// </summary>
+    /// <param name="_goalIndex"></param>
     private void MoveBetweenPoints(int _goalIndex)
     {
         Transform _goal = m_patrolPoints[_goalIndex].transform;
@@ -94,6 +129,10 @@ public class GraveyardGuard : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks for points of interest - I.E, player
+    /// </summary>
+    /// <returns></returns>
     private GameObject CheckForPoi()
     {
         Collider[] _hitColliders = Physics.OverlapSphere(transform.position, m_scanRadius);
@@ -143,7 +182,9 @@ public class GraveyardGuard : MonoBehaviour
 
         return null;
     }
-
+    /// <summary>
+    /// Shows navigation path
+    /// </summary>
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

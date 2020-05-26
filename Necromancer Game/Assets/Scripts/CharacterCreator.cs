@@ -7,15 +7,32 @@ using Valve.VR.InteractionSystem;
 
 public class CharacterCreator : MonoBehaviour
 {
+    /// <summary>
+    /// Reference to a snap points class
+    /// </summary>
     private SnapPoints m_snapPoints;
+    /// <summary>
+    /// Global variable to store the snap points within the snap points class
+    /// </summary>
     private GameObject[] m_points;
+    /// <summary>
+    /// Reference to the knight prefab
+    /// </summary>
     [SerializeField] private GameObject m_knight = null;
+    /// <summary>
+    /// Reference to the berserker prefab
+    /// </summary>
     [SerializeField] private GameObject m_berserker = null;
+    /// <summary>
+    /// reference to the thief prefab
+    /// </summary>
     [SerializeField] private GameObject m_thief = null;
-
+    /// <summary>
+    /// Dictionary to hold the number of occurences of a certain class of limb within a unit
+    /// </summary>
     Dictionary<string, int> m_dict = new Dictionary<string, int>();
     /// <summary>
-    /// 
+    /// On awake, get all snap points and their relevant gameobject.
     /// </summary>
     private void Awake()
     {
@@ -29,7 +46,7 @@ public class CharacterCreator : MonoBehaviour
         }
 }
 /// <summary>
-/// 
+/// Checks the Snap Points for children and breaks if any are not found. If all parts are filled, creates a unit.
 /// </summary>
 public void CheckForParts()
     {
@@ -91,6 +108,10 @@ public void CheckForParts()
         }
     }
 
+/// <summary>
+/// Creates a unit and adds relevant components to it if it didn't previously have them. Then, sets it to inactive and adds it to the player inventory.
+/// </summary>
+/// <param name="_minionToCreate"></param>
     private void CreateMinion(string _minionToCreate)
     {
         GameObject _minion = null;

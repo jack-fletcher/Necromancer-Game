@@ -20,9 +20,12 @@ public class TimeManager : MonoBehaviour, ISubject
             Notify();
         }
     }
+    /// <summary>
+    /// TimeOfDay variable to hold the time of day
+    /// </summary>
     private TimeOfDay _timeOfDay;
-
-    private TimeOfDay m_TimeOfDay;
+    /// <summary>
+    /// 
     private void Start()
     {
 

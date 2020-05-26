@@ -4,7 +4,9 @@ using UnityEngine;
 public class MenuStartPotion : MenuPotion
 {
 
-
+    /// <summary>
+    /// On potion activate, fade to red and transition scene
+    /// </summary>
     public override void OnPotionActivate()
     {
         ///Start Scene

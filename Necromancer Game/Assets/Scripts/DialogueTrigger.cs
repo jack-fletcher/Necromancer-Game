@@ -9,15 +9,26 @@ using Valve.VR.InteractionSystem;
 /// </summary>
 public class DialogueTrigger : MonoBehaviour
 {
-
+    /// <summary>
+    /// Reference to a specific Dialogue class
+    /// </summary>
     [SerializeField] private Dialogue m_dialogue = null;
-
+    /// <summary>
+    /// Reference to the canvas the visual sentence will be shown on.
+    /// </summary>
     [SerializeField] private Canvas m_canvas = null;
-
+    /// <summary>
+    /// GUI showing villager name
+    /// </summary>
     [SerializeField] private TextMeshProUGUI m_name = null;
-
+    /// <summary>
+    /// GUI Showing sentence data
+    /// </summary>
     [SerializeField] private TextMeshProUGUI m_content = null;
 
+    /// <summary>
+    /// Reference to the animator attached to GameObject
+    /// </summary>
     [SerializeField] private Animator m_anim = null;
         // Start is called before the first frame update
         void Start()
@@ -31,7 +42,10 @@ public class DialogueTrigger : MonoBehaviour
     {
         
     }
-
+    /// <summary>
+    /// When within close proximity, show text
+    /// </summary>
+    /// <param name="other"> The GameObject that entered the trigger</param>
     private void OnTriggerEnter(Collider other)
     {
 
@@ -44,7 +58,10 @@ public class DialogueTrigger : MonoBehaviour
         {
         }
     }
-
+    /// <summary>
+    /// If a player leaves the proximity, end text
+    /// </summary>
+    /// <param name="other"> The GameObject that exited the trigger</param>
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject == Player.instance.gameObject)
@@ -53,12 +70,17 @@ public class DialogueTrigger : MonoBehaviour
             m_canvas.enabled = false;
         }
     }
-
+    /// <summary>
+    /// When Dialogue is triggered, access dialoguemanager singleton to start sentence
+    /// </summary>
     public void TriggerDialogue()
     {
         DialogueManager.Instance.StartDialogue(m_dialogue, m_name, m_content);
     }
-
+    /// <summary>
+    /// Starts the scaleUp animation
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ScaleUp()
     {
         float _animLength = 0;

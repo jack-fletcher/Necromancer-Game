@@ -10,14 +10,21 @@ using Valve.VR.InteractionSystem;
 public class DistanceGrab : MonoBehaviour
 {
     [SerializeField] private float m_length = 10f;
-
+    /// <summary>
+    /// Hand that's grabbing things
+    /// </summary>
     private Hand m_hand;
+    /// <summary>
+    /// Interactable component of the object thats being held
+    /// </summary>
     private Interactable m_object;
     private void Awake()
     {
         m_hand = this.GetComponent<Hand>();
     }
-
+    /// <summary>
+    /// If Raycast hits something that has interactable script, check if hand is holding something and if not, attach hit object 
+    /// </summary>
     private void Update()
     {
         RaycastHit _hit;

@@ -5,15 +5,26 @@ using Valve.VR;
 using Valve.VR.InteractionSystem;
 
 public class TeleportToArea : MonoBehaviour
-{
+{   
+    /// <summary>
+    /// Destination transform
+    /// </summary>
     [SerializeField] private Transform m_destination = null;
-
+    /// <summary>
+    /// Should you fade to black?
+    /// </summary>
     [SerializeField] private bool m_fadeToBlack = true;
-
+    /// <summary>
+    /// Do you want to show a canvas before teleporting?
+    /// </summary>
     [SerializeField] private bool m_useCanvas = false;
-
+    /// <summary>
+    /// Reference to a canvas
+    /// </summary>
     [SerializeField] private Canvas m_canvas = null;
-
+    /// <summary>
+    /// Audio cue
+    /// </summary>
     [SerializeField] private AudioSource m_doorSound = null;
     private void Start()
     {
@@ -27,7 +38,10 @@ public class TeleportToArea : MonoBehaviour
             m_doorSound = this.GetComponent<AudioSource>();
         }
     }
-
+    /// <summary>
+    /// On trigger enter, if object is player then activate canvas or teleport
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == Player.instance.gameObject)
@@ -48,7 +62,10 @@ public class TeleportToArea : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Start coroutine on target
+    /// </summary>
+    /// <param name="target">Target GameObject</param>
     public void EnterRegion(GameObject target)
     {
         if (m_fadeToBlack)
@@ -59,11 +76,18 @@ public class TeleportToArea : MonoBehaviour
         }
 
     }
-
+    /// <summary>
+    /// Start coroutine on player instance
+    /// </summary>
     public void EnterRegion()
     {
         StartCoroutine("FadeOut", Player.instance.gameObject);
     }
+    /// <summary>
+    /// Fades out
+    /// </summary>
+    /// <param name="target">Target GameObject</param>
+    /// <returns></returns>
     IEnumerator FadeOut(GameObject target)
     {
         SteamVR_Fade.View(Color.black, 1);
@@ -71,6 +95,11 @@ public class TeleportToArea : MonoBehaviour
         StartCoroutine("FadeIn", target);
     }
 
+    /// <summary>
+    /// Fades in
+    /// </summary>
+    /// <param name="target">Target GameObject</param>
+    /// <returns></returns>
     IEnumerator FadeIn(GameObject target)
     {
         if (target.GetComponent<CharacterController>() != null)

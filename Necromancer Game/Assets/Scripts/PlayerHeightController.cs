@@ -29,6 +29,9 @@ public class PlayerHeightController : MonoBehaviour
         UpdateHeight();
     }
 
+    /// <summary>
+    /// Updates player height.
+    /// </summary>
     private void UpdateHeight()
     {
         if (m_useRealHeight == true)

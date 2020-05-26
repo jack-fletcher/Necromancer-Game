@@ -88,8 +88,10 @@ public class NavigationManager : MonoBehaviour
     //    }
     //}
 
-
-    void OnDrawGizmos()
+    ///
+    /// Draws navigation points and links them with blue line
+    ///
+    private void OnDrawGizmos()
     {
         
         for (int i = 0; i < m_navigationPoints.Length; i++)

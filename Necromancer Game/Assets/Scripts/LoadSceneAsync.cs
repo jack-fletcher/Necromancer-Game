@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneAsync : MonoBehaviour
 {
+    /// <summary>
+    /// The scene to load
+    /// </summary>
     [SerializeField] private string m_sceneToLoad = null;
 
     // Start is called before the first frame update

@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class ShowContentsOfArrayAsGizmo : MonoBehaviour
 {
+    /// <summary>
+    /// The array to show
+    /// </summary>
     [SerializeField] private GameObject[] m_arrayPoints = null;
+    
+    /// <summary>
+    /// Shows contents as an array
+    /// </summary>
     private void OnDrawGizmos()
     {
         for (int i = 0; i < m_arrayPoints.Length; i++)

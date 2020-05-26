@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RotateForever : MonoBehaviour
 {
+    /// <summary>
+    /// Speed it rotates per second
+    /// </summary>
     [SerializeField] private int m_degreesToRotatePerSecond = 60;
     // Update is called once per frame
     void Update()

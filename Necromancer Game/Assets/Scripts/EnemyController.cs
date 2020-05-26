@@ -6,19 +6,35 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterStats))]
 public class EnemyController : MonoBehaviour
 {
-
+    /// <summary>
+    /// Reference to a character controller
+    /// </summary>
     private CharacterController m_cc;
-
+    /// <summary>
+    /// Reference to the characters stats script
+    /// </summary>
     private CharacterStats m_cs;
-
+    /// <summary>
+    /// The start index of the navigation instances nav points that the character starts at
+    /// </summary>
     private int m_startIndex;
-
+    /// <summary>
+    /// Reference to the animator component
+    /// </summary>
     private Animator m_anim;
+    /// <summary>
+    /// Does the unit patrol between two points? //TODO
+    /// </summary>
     [Tooltip("Does the unit patrol between two points?")]
     [SerializeField] private bool m_patrols = false;
+    /// <summary>
+    /// Does the unit move towards enemy spawn?
+    /// </summary>
     [Tooltip("Does the unit move towards the enemy spawn? ")]
     [SerializeField] private bool m_MovesTowardsEnemyStart = false;
-
+    /// <summary>
+    /// Is the unit stationary
+    /// </summary>
     [SerializeField] private bool m_stationary = true;
     public int m_currentState;
     private void Awake()
@@ -39,12 +55,12 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        SimpleMove(m_currentState);
           //  m_anim.SetBool("isWalking", false);
     }
 
     /// <summary>
-    /// 
+    /// Moves towards a goal index, checking for points of interest along the way. If one is found, that becomes the goal.
     /// </summary>
     void SimpleMove(int goalIndex)
     {
@@ -121,7 +137,10 @@ public class EnemyController : MonoBehaviour
         }
 
     }
-
+    /// <summary>
+    /// On collision with a weapon, take damage
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<Weapon>() != null)
@@ -129,7 +148,10 @@ public class EnemyController : MonoBehaviour
             m_cs.TakeDamage(collision.gameObject.GetComponent<Weapon>().m_damage, collision.gameObject.GetComponent<Weapon>().m_attackType);
         }
     }
-
+    /// <summary>
+    /// Patrols between two points //TODO
+    /// </summary>
+    /// <returns></returns>
     private Transform Patrol()
     {
 
@@ -138,9 +160,9 @@ public class EnemyController : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Checks for an enemy within a sphere radius
     /// </summary>
-    /// <returns></returns>
+    /// <returns>returns the GameObject that is found</returns>
     private GameObject CheckForEnemy()
     {
         int _radius = 5;

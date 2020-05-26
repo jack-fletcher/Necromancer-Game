@@ -13,21 +13,44 @@ public class Grave : MonoBehaviour
     /// The health of the grave - Dictates whether it should break apart or not.
     /// </summary>
     private float m_health;
-
+    /// <summary>
+    /// Reference to the head prefab.
+    /// </summary>
     [SerializeField] private GameObject m_head = null;
+    /// <summary>
+    /// Reference to the left arm prefab.
+    /// </summary>
     [SerializeField] private GameObject m_leftArm = null;
+    /// <summary>
+    /// Reference to the right arm prefab.
+    /// </summary>
     [SerializeField] private GameObject m_rightArm = null;
+    /// <summary>
+    /// Reference to the torso prefab.
+    /// </summary>
     [SerializeField] private GameObject m_torso = null;
+    /// <summary>
+    /// Reference to the left leg prefab.
+    /// </summary>
     [SerializeField] private GameObject m_leftLeg = null;
+    /// <summary>
+    /// Reference to the right leg prefab.
+    /// </summary>
     [SerializeField] private GameObject m_rightLeg = null;
 
+    /// <summary>
+    /// The mesh that replaces this one when its damaged first
+    /// </summary>
     [SerializeField] private GameObject m_damagedStage1 = null;
+    /// <summary>
+    /// Next stage of damage
+    /// </summary>
     [SerializeField] private GameObject m_damagedStage2 = null;
 
 
 
     /// <summary>
-    /// 
+    /// Sets the health
     /// </summary>
     private void Awake()
     {
@@ -53,10 +76,10 @@ public class Grave : MonoBehaviour
 #endif
     }
     /// <summary>
-    /// 
+    /// Sets the part and class type types based on parameters, then instantiates it within the grave.
     /// </summary>
-    /// <param name="_pt"></param>
-    /// <param name="_ct"></param>
+    /// <param name="_pt"> The part type to add </param>
+    /// <param name="_ct"> The Class type to add </param>
     public void SetBodyPart(Part_Type _pt, Class_Type _ct)
     {
         switch (_pt)
@@ -141,7 +164,7 @@ public class Grave : MonoBehaviour
 
     }
    /// <summary>
-   /// 
+   /// Disable the mesh renderer and collider of the object and set the body part to be visible on death
    /// </summary>
     private void Die()
     {
@@ -175,7 +198,10 @@ public class Grave : MonoBehaviour
     //        Debug.Log(collision.gameObject.name);
     //    }
     //}
-
+    
+    ///
+    /// On Trigger enter, take damage if other gameobject was a weapon
+    /// 
     private void OnTriggerEnter(Collider other)
     {
         Weapon _weapon = other.gameObject.GetComponent<Weapon>();
@@ -187,7 +213,6 @@ public class Grave : MonoBehaviour
 
 
             //Play audioclip
-
             //Visual effect? at first point of hit, instantiate sparks or dirt moving or something similar
         }
         else

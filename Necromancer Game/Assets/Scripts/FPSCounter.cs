@@ -17,7 +17,9 @@ public class FPSCounter : MonoBehaviour
     {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
     }
-
+    /// <summary>
+    /// Shows fps - Debug
+    /// </summary>
     private void OnGUI()
     {
         int w = Screen.width, h = Screen.height;

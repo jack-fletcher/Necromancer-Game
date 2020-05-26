@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MenuExitPotion : MenuPotion
 {
+    /// <summary>
+    /// Quit application
+    /// </summary>
     public override void OnPotionActivate()
     {
 

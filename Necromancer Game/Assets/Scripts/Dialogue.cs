@@ -29,7 +29,9 @@ public class Dialogue
     [Tooltip("Defines which type of dialogue the character gives.")]
     public Dialogue_Types m_dialogueType;
 
-
+    /// <summary>
+    /// Sets the sentence data
+    /// </summary>
     public void SetSentences()
     {
         //m_sentences = XMLManager.Instance.ReadSentenceData(m_name, "Hints");

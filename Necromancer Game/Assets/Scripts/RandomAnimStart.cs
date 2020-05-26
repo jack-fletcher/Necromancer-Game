@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RandomAnimStart : MonoBehaviour
 {
+    /// <summary>
+    /// Animator state to play
+    /// </summary>
     [SerializeField] private string m_animState = "";
 
     // Start is called before the first frame update

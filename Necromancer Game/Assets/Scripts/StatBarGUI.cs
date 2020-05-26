@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 public class StatBarGUI : MonoBehaviour
 {
-
+    /// <summary>
+    /// Reference to the stat bar slider
+    /// </summary>
     [SerializeField] private Slider m_statBar = null;
+    /// <summary>
+    /// Reference to the objects characterstats script
+    /// </summary>
     [SerializeField] private CharacterStats m_cc = null;
     // Start is called before the first frame update
     void Start()

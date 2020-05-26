@@ -5,10 +5,21 @@ using Valve.VR.InteractionSystem;
 
 public class TowerDefence : MonoBehaviour
 {
+    /// <summary>
+    /// Reference to timemanager
+    /// </summary>
     [SerializeField] private TimeManager m_timeManager = null;
+    /// <summary>
+    /// TeleportToArea reference
+    /// </summary>
     [SerializeField] private TeleportToArea m_teleportToArea = null;
+    /// <summary>
+    /// Reference to the players unit inventory
+    /// </summary>
     [SerializeField] private UnitInventory m_playerUnits = null;
-
+    /// <summary>
+    /// TODO remove
+    /// </summary>
     [SerializeField] private GameObject m_testObject = null;
 
     
@@ -26,7 +37,9 @@ public class TowerDefence : MonoBehaviour
         //}
 #endif
     }
-
+    /// <summary>
+    /// On button press, start tower defence mode
+    /// </summary>
     public void OnButtonPress()
     {
         m_timeManager.ChangeTime(TimeOfDay.night);

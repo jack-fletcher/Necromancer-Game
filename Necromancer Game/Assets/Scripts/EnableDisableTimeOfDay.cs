@@ -5,19 +5,28 @@ using UnityEngine;
 public class EnableDisableTimeOfDay : MonoBehaviour, IObserver
 {
     /// <summary>
-    /// 
+    /// Reference to the timemanager singleton
     /// </summary>
     [SerializeField] private TimeManager m_timeManager = null;
-
+    /// <summary>
+    /// Active time of day - Default is day
+    /// </summary>
     [SerializeField] private TimeOfDay m_activeTime = TimeOfDay.day;
-
+    /// <summary>
+    /// Objects to disable/enable
+    /// </summary>
     [SerializeField] private GameObject[] m_objectsToCheck = null;
-
+    /// <summary>
+    /// Method that's called when state is updated
+    /// </summary>
+    /// <param name="_subject"></param>
     public void UpdateState(ISubject _subject)
     {
         EnableDisable();
     }
-
+    /// <summary>
+    /// Subscribe to time manager whenever this is activated
+    /// </summary>
     private void Awake()
     {
         m_timeManager.Subscribe(this);
@@ -35,7 +44,9 @@ public class EnableDisableTimeOfDay : MonoBehaviour, IObserver
     {
         
     }
-    
+    /// <summary>
+    /// Enables or disables an object based on time of day and active time
+    /// </summary>
     void EnableDisable()
     {
         if (m_activeTime != m_timeManager.TimeOfDay)

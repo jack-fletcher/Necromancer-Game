@@ -33,7 +33,7 @@ public class UnitManager : MonoBehaviour
     [SerializeField] private GameObject m_bossChar = null;
     [SerializeField] private UnitInventory m_unitInventory = null;
     [SerializeField] private GameObject m_spawnPoint = null;
-
+    [SerializeField] private TMPro.TextMeshProUGUI m_endText = null;
     private GameObject m_enemiesParent = null;
     private GameObject m_friendlyParent = null;
     /// <summary>
@@ -51,7 +51,6 @@ public class UnitManager : MonoBehaviour
         }
         ///Add all navigation points to the array
         SetupUnits();
-
     }
 
     // Update is called once per frame
@@ -62,9 +61,18 @@ public class UnitManager : MonoBehaviour
         {
             CreateEnemyUnits();
         }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            EndGameWin();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            EndGameLoss();
+        }
 #endif
 
-     //   MediateGame();
+    
     }
 
 
@@ -97,11 +105,18 @@ public class UnitManager : MonoBehaviour
 
         //CreateUnits();
     }
+    /// <summary>
+    /// Creates both player and enemy units
+    /// </summary>
     public void CreateUnits()
     {
         CreateEnemyUnits();
         CreateFriendlyUnits();
     }
+
+    /// <summary>
+    /// Creates the enemy units and assigns them a name
+    /// </summary>
     private void CreateEnemyUnits()
     {
         int counter = 0;
@@ -133,7 +148,9 @@ public class UnitManager : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Creates friendly units
+    /// </summary>
     private void CreateFriendlyUnits()
     {
         m_friendlyParent = new GameObject();
@@ -148,12 +165,19 @@ public class UnitManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Wait function, can be used to wait between unit spawns
+    /// </summary>
+    /// <param name="delay">Time to wait between each spawn</param>
+    /// <returns></returns>
     public IEnumerator Wait(float delay)
     {
         yield return new WaitForSeconds(delay);
     }
 
-
+    /// <summary>
+    /// Mediates the gameplay - Checks whether each player should have lost
+    /// </summary>
     public void MediateGame()
     {
         Debug.Log("Mediating...");
@@ -187,15 +211,24 @@ public class UnitManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Changes endgame text and moves the player
+    /// </summary>
     private void EndGameWin()
     {
-        Debug.Log("Won Game");
+        TeleportToArea _tp = GetComponent<TeleportToArea>();
+        _tp.EnterRegion();
+        m_endText.text = "You won. Thanks for playing,  Add the potion to go back to the main menu.";
     }
+    /// <summary>
+    /// Changes endgame text and moves the player
+    /// </summary>
     private void EndGameLoss()
     {
         Debug.Log("Lost Game");
         TeleportToArea _tp = GetComponent<TeleportToArea>();
         _tp.EnterRegion();
+        m_endText.text = "You lost. Thanks for playing, add the potion to go back to the main menu...";
     }
 }
 

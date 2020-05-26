@@ -175,7 +175,9 @@ public class CharacterStats : MonoBehaviour
     }
 
     
-
+    /// <summary>
+    /// Calculates the stats of a unit via a random range
+    /// </summary>
     public virtual void CalculateStats()
     {
         switch (m_characterType) {
@@ -235,6 +237,10 @@ public class CharacterStats : MonoBehaviour
     
     }
 
+    /// <summary>
+    /// When an object collides with a unit, check if that object was a weapon.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<Weapon>() != null)

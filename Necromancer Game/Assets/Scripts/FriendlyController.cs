@@ -6,13 +6,21 @@ using UnityEngine;
 public class FriendlyController : MonoBehaviour
 {
 
-
+    /// <summary>
+    /// Reference to the attached charactercontroller component
+    /// </summary>
     private CharacterController m_cc;
-
+    /// <summary>
+    /// Reference to the attached animator component
+    /// </summary>
     private Animator m_anim;
-
+    /// <summary>
+    /// Reference to characterstats class
+    /// </summary>
     private CharacterStats m_cs;
-
+    /// <summary>
+    /// The index of the navigation managers nav points that the unit starts at
+    /// </summary>
     public int m_startIndex = 0;
     private int m_currentState;
 
@@ -40,7 +48,7 @@ public class FriendlyController : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Moves to a goal while checking for points of interest, if one is found, that becomes the goal
     /// </summary>
     void SimpleMove(int goalIndex)
     {

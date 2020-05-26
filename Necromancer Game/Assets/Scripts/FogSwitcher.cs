@@ -5,7 +5,7 @@ using UnityEngine;
 public class FogSwitcher : MonoBehaviour, IObserver
 {
     /// <summary>
-    /// Reference tothe TimeManager Subject
+    /// Reference to the TimeManager Subject
     /// </summary>
     [SerializeField] private TimeManager _time = null;
 
@@ -27,7 +27,10 @@ public class FogSwitcher : MonoBehaviour, IObserver
     {
         
     }
-
+    /// <summary>
+    /// When state is updated, Change the fog
+    /// </summary>
+    /// <param name="_subject"></param>
     void IObserver.UpdateState(ISubject _subject)
     {
        if (_subject is TimeManager _time)
@@ -35,7 +38,9 @@ public class FogSwitcher : MonoBehaviour, IObserver
             ChangeFog();
         }
     }
-
+    /// <summary>
+    /// turns on and off fog
+    /// </summary>
     private void ChangeFog()
     {
 
