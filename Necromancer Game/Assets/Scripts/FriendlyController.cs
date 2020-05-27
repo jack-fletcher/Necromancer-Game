@@ -6,11 +6,21 @@ using UnityEngine;
 public class FriendlyController : MonoBehaviour
 {
 
-
+    /// <summary>
+    /// Reference to the attached charactercontroller component
+    /// </summary>
     private CharacterController m_cc;
-
+    /// <summary>
+    /// Reference to the attached animator component
+    /// </summary>
+    private Animator m_anim;
+    /// <summary>
+    /// Reference to characterstats class
+    /// </summary>
     private CharacterStats m_cs;
-
+    /// <summary>
+    /// The index of the navigation managers nav points that the unit starts at
+    /// </summary>
     public int m_startIndex = 0;
     private int m_currentState;
 
@@ -21,6 +31,7 @@ public class FriendlyController : MonoBehaviour
         m_currentState = m_startIndex;
         m_cc = this.GetComponent<CharacterController>();
         m_cs = this.GetComponent<CharacterStats>();
+        m_anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,10 +40,15 @@ public class FriendlyController : MonoBehaviour
         if (m_currentState < NavigationManager.Instance.m_navigationPoints.Length){
             SimpleMove(m_currentState);
         }
+        else
+        {
+            m_anim.SetBool("isWalking", false);
+           
+        }
     }
 
     /// <summary>
-    /// 
+    /// Moves to a goal while checking for points of interest, if one is found, that becomes the goal
     /// </summary>
     void SimpleMove(int goalIndex)
     {
@@ -52,11 +68,20 @@ public class FriendlyController : MonoBehaviour
 
         moveVector = moveVector.normalized * m_cs.m_movementSpeed;
 
+
+        ///If the character controller isn't grounded, add gravity.
+        if (!m_cc.isGrounded)
+        {
+            moveVector += Physics.gravity;
+        }
+
         ///If the distance between this object and the target state is more than the minimum move distance of 1 units, move
         if (Vector3.Distance(gameObject.transform.position, _goal.position) > 1f)
         {
 
             m_cc.Move(moveVector * Time.deltaTime);
+            m_anim.SetBool("isWalking", true);
+            m_anim.SetBool("isAttacking", false);
             transform.LookAt(_goal);
 
         }
@@ -68,6 +93,8 @@ public class FriendlyController : MonoBehaviour
         {
             if (_goal.GetComponent<CharacterStats>() != null) {
                 m_cs.Attack(_enemyFound.GetComponent<CharacterStats>());
+                m_anim.SetBool("isWalking", false);
+                m_anim.SetBool("isAttacking", true);
             }
             else {
                 m_currentState++;

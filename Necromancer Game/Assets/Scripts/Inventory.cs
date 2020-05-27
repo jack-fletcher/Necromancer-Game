@@ -38,7 +38,9 @@ public class Inventory : MonoBehaviour
             {
                 Debug.Log("Hand and tag found");
                 hand.DetachObject(other.gameObject, false);
-                other.transform.SetParent(m_inventory);                
+                other.transform.SetParent(m_inventory);
+                other.GetComponent<Collider>().enabled = false;
+
             }
             else
             {
@@ -71,6 +73,7 @@ public class Inventory : MonoBehaviour
             if (other.transform.parent == this.gameObject)
             {
                 other.transform.parent = null;
+                other.GetComponent<Collider>().enabled = true;
             }
         }
     }

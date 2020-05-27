@@ -69,6 +69,7 @@ public class CharacterStats : MonoBehaviour
     /// Level of the character - Is not used in M.V.P, however may be used in M.A.P.
     /// </summary>
     public int m_level = 1;
+
     /// <summary>
     /// 
     /// </summary>
@@ -121,7 +122,7 @@ public class CharacterStats : MonoBehaviour
         ///Remove the amount of resistance from the damage
         damage *= res;
         m_currentHealth = Mathf.Clamp(m_currentHealth - damage, 0, m_currentHealth);
-        Debug.Log(this.gameObject.name + " took " + damage +  _at.ToString() + " damage." );
+   //     Debug.Log(this.gameObject.name + " took " + damage +  _at.ToString() + " damage." );
         if (m_currentHealth <= 0)
         {
             Die();
@@ -129,7 +130,6 @@ public class CharacterStats : MonoBehaviour
 
         Renderer[] _renderers = GetComponentsInChildren<Renderer>();
 
-        
         foreach (Renderer rend in _renderers)
         {
             StartCoroutine("Flash", rend);
@@ -137,31 +137,47 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
+    private void SetUpColours()
+    {
+        Renderer[] m_renderers = GetComponentsInChildren<Renderer>();
+
+        Color[] m_colours = new Color[m_renderers.Length];
+
+        for (int i = 0; i < m_renderers.Length; i++)
+        {
+            m_colours[i] = m_renderers[i].material.color;
+        }
+    }
 
     IEnumerator Flash(Renderer rend)
     {
-        Color _col = rend.material.color;
+        //TODO FIX THIS: If character gets hit again while already flashing, the original colour is set to flashed colour. //TEMP: Change _col to Color.white, 
+        //which hasn't yet been changed and likely wont, so won't have any impact, however would prefer not to do this in future. Low priority fix
+       // Color _col = rend.material.color;
         rend.material.color = Color.red;
         yield return new WaitForSeconds(0.5f);
-        rend.material.color = _col;
+        rend.material.color = Color.white;
     }
     /// <summary>
     /// Kills the character.
     /// </summary>
     public void Die()
     {
-        Debug.Log(this.gameObject.name + " was killed.");
+   //     Debug.Log(this.gameObject.name + " was killed.");
         this.gameObject.SetActive(false);
+        UnitManager.Instance.MediateGame();
     }
 
     public void DealDamage(CharacterStats _target)
     {
         _target.TakeDamage(m_physicalDamage, m_attackType);
-        Debug.Log(transform.name + " Is dealing damage.");
+     //   Debug.Log(transform.name + " Is dealing damage.");
     }
 
     
-
+    /// <summary>
+    /// Calculates the stats of a unit via a random range
+    /// </summary>
     public virtual void CalculateStats()
     {
         switch (m_characterType) {
@@ -219,6 +235,19 @@ public class CharacterStats : MonoBehaviour
         m_spellResist = m_intelligence * 10;
 
     
+    }
+
+    /// <summary>
+    /// When an object collides with a unit, check if that object was a weapon.
+    /// </summary>
+    /// <param name="collision"></param>
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<Weapon>() != null)
+        {
+            Weapon _weapon = collision.gameObject.GetComponent<Weapon>();
+            TakeDamage(_weapon.m_damage, _weapon.m_attackType);
+        }
     }
 
     private void Update()

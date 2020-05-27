@@ -73,8 +73,9 @@ namespace Valve.VR.InteractionSystem
 
 			Vector3 delta = new Vector3( right, up, forward ) * currentSpeed * deltaRealTime;
 
-			transform.position += transform.TransformDirection( delta );
-
+            CharacterController _cc = Player.instance.GetComponent<CharacterController>();
+            //.position += transform.TransformDirection( delta );
+            _cc.Move(transform.TransformDirection(delta));
 			Vector3 mousePosition = Input.mousePosition;
 
 			if ( Input.GetMouseButtonDown( 1 ) /* right mouse */)

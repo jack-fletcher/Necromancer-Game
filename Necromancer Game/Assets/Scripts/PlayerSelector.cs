@@ -25,4 +25,31 @@ public class PlayerSelector : MonoBehaviour
 
     }
 
+
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            SwapInputs();
+        }
+#endif
+    }
+
+    /// <summary>
+    /// Swaps activate controller between vr and first person.
+    /// </summary>
+    private void SwapInputs()
+    {
+        if (vr_Controller.activeInHierarchy)
+        {
+            vr_Controller.SetActive(false);
+            fp_Controller.SetActive(true);
+        }
+        else
+        {
+            vr_Controller.SetActive(true);
+            fp_Controller.SetActive(false);
+        }
+    }
 }

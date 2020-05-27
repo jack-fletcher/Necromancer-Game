@@ -1,26 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class TimeSwitcher : MonoBehaviour, IObserver
 {
     /// <summary>
-    /// 
+    /// Reference to TimeManager script
     /// </summary>
     public TimeManager _time;
     /// <summary>
-    /// 
+    /// Chosen night skybox material
     /// </summary>
     public Material m_nightSkybox;
     /// <summary>
-    /// 
+    /// Chosen day skybox material
     /// </summary>
     public Material m_daySkybox;
 
     /// <summary>
-    /// 
+    /// Reference to all objects within the scene with day lighting tag
     /// </summary>
-    private GameObject[] m_globalLight;
+    private GameObject[] m_dayLights;
+    /// <summary>
+    /// Reference to all objects within the scene with night lighting tag
+    /// </summary>
+    private GameObject[] m_nightLights;
+
+    /// <summary>
+    /// On enable, subscribe to timemanager
+    /// </summary>
     private void OnEnable()
     {
 
@@ -28,9 +37,14 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         _time.Subscribe(this);
 
 
-        m_globalLight = GameObject.FindGameObjectsWithTag("GlobalLighting");
+        m_dayLights = GameObject.FindGameObjectsWithTag("DayLighting");
+        m_nightLights = GameObject.FindGameObjectsWithTag("NightLighting");
     }
 
+    /// <summary>
+    /// When the state is updated, changelighting
+    /// </summary>
+    /// <param name="_subject"></param>
     public void UpdateState(ISubject _subject)
     {
         if (_subject is TimeManager _time)
@@ -39,6 +53,9 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         }
     }
 
+    /// <summary>
+    /// Turns lighting on or off based on time of day //TODO replace lighting with EnableDisabletimeOfDay as its better for abstraction
+    /// </summary>
     private void ChangeLighting()
     {
 
@@ -46,22 +63,31 @@ public class TimeSwitcher : MonoBehaviour, IObserver
 
        
         ///If its not nighttime, change skybox to this and set the default skybox
+        ///Additionally, turn on situational lighting
         switch (_time.TimeOfDay)
         {
-            case "day":
+            case TimeOfDay.day:
                 RenderSettings.skybox = m_daySkybox;
 
-                for (int i = 0; i < m_globalLight.Length; i++)
+                for (int i = 0; i < m_dayLights.Length; i++)
                 {
-                    m_globalLight[i].SetActive(true);
+                    m_dayLights[i].GetComponent<Light>().enabled = true;
+                }
+                for (int i = 0; i < m_nightLights.Length; i++)
+                {
+                    m_nightLights[i].GetComponent<Light>().enabled = false;
                 }
                 break;
 
-            case "night":
+            case TimeOfDay.night:
                 RenderSettings.skybox = m_nightSkybox;
-                for (int i = 0; i < m_globalLight.Length; i++)
+                for (int i = 0; i < m_dayLights.Length; i++)
                 {
-                    m_globalLight[i].SetActive(false);
+                    m_dayLights[i].GetComponent<Light>().enabled = false;
+                }
+                for (int i = 0; i < m_nightLights.Length; i++)
+                {
+                    m_nightLights[i].GetComponent<Light>().enabled = true;
                 }
                 break;
 
@@ -72,5 +98,6 @@ public class TimeSwitcher : MonoBehaviour, IObserver
         }
        
     }
+
 }
 

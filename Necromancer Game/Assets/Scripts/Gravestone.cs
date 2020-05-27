@@ -18,7 +18,7 @@ public class Gravestone : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Sets the canvas text.
     /// </summary>
     /// <param name="text"></param>
     public void SetCanvasText(string text)

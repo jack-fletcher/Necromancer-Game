@@ -59,10 +59,16 @@ public class XMLManager : MonoBehaviour
     //    }
     //}
 
+        /// <summary>
+        ///  Returns a string array of all data contained within the child of a node
+        /// </summary>
+        /// <param name="query">The query to pass to xml file as an Xpath expression</param>
+        /// <returns> Returns string held within child node</returns>
     public string[] ReadChildNodeData(string query)
     {
         XmlDocument _doc = new XmlDocument();
-        _doc.Load("Assets/Resources/GameText.xml");
+        TextAsset _textAsset = Resources.Load("GameText") as TextAsset;
+        _doc.LoadXml(_textAsset.text);
         XmlNode _elem = _doc.SelectSingleNode(query);
 
         if (_elem != null)
@@ -74,7 +80,6 @@ public class XMLManager : MonoBehaviour
             for (int i = 0; i < _nodeList.Count; i++)
             {
                 _elemLists[i] = _nodeList[i].InnerXml;
-                Debug.Log(_elemLists[i]);
             }
             return _elemLists;
         }
@@ -87,10 +92,10 @@ public class XMLManager : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Checks xml file for a path that fits xml query
     /// </summary>
     /// <param name="query">Takes in an Xpath expression that evaluates to the XML files given structure.</param>
-    /// <returns></returns>
+    /// <returns>Returns string of node data</returns>
     public string ReadSingleNodeData(string query)
     {
 
