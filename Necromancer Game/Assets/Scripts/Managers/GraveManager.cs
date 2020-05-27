@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
@@ -42,10 +43,12 @@ public class GraveManager : MonoBehaviour
             Grave _grave = go.GetComponentInChildren<Grave>();
             Gravestone _gravestone = go.GetComponentInChildren<Gravestone>();
             int _idx = UnityEngine.Random.Range(0, Enum.GetValues(typeof(Part_Type)).Length);
+            
             Part_Type _pt = (Part_Type)_idx;
             int idx = UnityEngine.Random.Range(0, Enum.GetValues(typeof(Class_Type)).Length);
-            Class_Type _ct = (Class_Type)idx;
 
+            Class_Type _ct = (Class_Type)idx;
+            Debug.Log(idx + "and class type: " + _ct.ToString());
             switch (_ct)
             {
                 case Class_Type.berserker:

@@ -121,6 +121,8 @@ public class Grave : MonoBehaviour
         //m_bodyPart.AddComponent<BodyPart>();
         //m_bodyPart.AddComponent<Interactable>();
         //m_bodyPart.AddComponent<Throwable>();
+
+        m_bodyPart.GetComponent<BodyPart>().m_class_Type = _ct;
         Rigidbody rb = m_bodyPart.GetComponent<Rigidbody>();
    //     rb.useGravity = false;
    //     rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -133,9 +135,9 @@ public class Grave : MonoBehaviour
         m_bodyPart.name = "Body Part: " + m_bodyPart.GetComponent<BodyPart>().m_part_Type + " (" + m_bodyPart.GetComponent<BodyPart>().m_class_Type + ")";
     }
     /// <summary>
-    /// 
+    /// Subtracts the damage variable from the graves health.
     /// </summary>
-    /// <param name="damage"></param>
+    /// <param name="damage">Health to remove</param>
     public void TakeDamage(float damage)
     {
         m_health = Mathf.Clamp(m_health - damage, 0, m_health);
