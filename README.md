@@ -1,6 +1,13 @@
 # Necromancer-Game
 A repo for the necromancer game created by Jack Fletcher within the PRCO304 Final Year Project module at Plymouth University.
 
+Note*
+
+Use space bar to move between VR and first person modes
+
+In first person, controls are a typical WASD control with shift to speed up.
+
+It's most likely more stable within the Unity Editor, but the Build.zip *should* work.
 
 References: 
 
