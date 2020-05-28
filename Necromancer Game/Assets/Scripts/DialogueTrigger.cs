@@ -103,7 +103,7 @@ public class DialogueTrigger : MonoBehaviour
 
         yield return new WaitForSeconds(0);
             TriggerDialogue();
-            Debug.Log("Worked");
+          //  Debug.Log("Worked");
 
     }
 }

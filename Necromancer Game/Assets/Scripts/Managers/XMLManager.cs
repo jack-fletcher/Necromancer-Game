@@ -100,7 +100,9 @@ public class XMLManager : MonoBehaviour
     {
 
         XmlDocument _doc = new XmlDocument();
-        _doc.Load("Assets/Resources/GameText.xml");
+        TextAsset _textAsset = Resources.Load("GameText") as TextAsset;
+        _doc.LoadXml(_textAsset.text);
+        //  _doc.Load("Assets/Resources/GameText.xml");
 
         XmlNode _elem = _doc.SelectSingleNode(query);
         if (_elem != null)

@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -29,16 +31,12 @@ public class Dialogue
     [Tooltip("Defines which type of dialogue the character gives.")]
     public Dialogue_Types m_dialogueType;
 
-
-    public void Start()
-    {
-        SetHintName();
-    }
     /// <summary>
     /// Sets the sentence data
     /// </summary>
     public void SetSentences()
     {
+        SetHintName();
         //m_sentences = XMLManager.Instance.ReadSentenceData(m_name, "Hints");
 
         if (m_dialogueType == Dialogue_Types.Part_Hint)
@@ -55,9 +53,28 @@ public class Dialogue
             Debug.LogError("Dialogue type not correct: Output was: " + m_dialogueType.ToString());
         }
     }
-
+    //This is not a good solution. //TODO change this to be...Not this
+    /// <summary>
+    /// Sets the hint randomly from the graves on the map
+    /// </summary>
     public void SetHintName()
     {
-      //  m_hintName = XMLManager.Instance.ReadSingleNodeData("//*[@id='EnemyUnits']//*[@id='{m_hintName}']//*[@id='Hints']");
+
+        if (m_dialogueType == Dialogue_Types.Part_Hint)
+        {
+            //Get a random grave name from the graves within the gravemanager instance, get the first child (the gravestone) then get the first child again (canvas) then get the first child again (tmpro gui) then get the text from that
+
+            int _idx = UnityEngine.Random.Range(0, GraveManager.Instance.m_graveSpots.Length);
+            //This should return the full name including filler text, but we can assume the first word is always the characters first name - bad design //TODO change and this should use regex anyways
+            string name = GraveManager.Instance.m_graveSpots[_idx].gameObject.GetComponentInChildren<TextMeshProUGUI>().text;
+            //Trim leading whitspace 
+            name = name.Trim();
+            //Get the first name, which should be up til the first space
+            name = name.Substring(0, name.IndexOf(" "));
+            ///Sanity check
+          //  Debug.Log(name);
+            ///Search the xml file for something with this first name
+            m_hintName = name;
+        }
     }
 }

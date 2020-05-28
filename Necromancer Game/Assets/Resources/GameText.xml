@@ -46,7 +46,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Hallfred ">
+      <Unit id="Hallfred">
         <Name id="Name"> Hallfred Asgeirsson</Name>
         <GraveText id="GraveText"> Hallfred Asgeirsson 
 796-818 </GraveText>
@@ -59,7 +59,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Throst ">
+      <Unit id="Throst">
         <Name id="Name">Throst Æiriksson </Name>
         <GraveText id="GraveText"> Throst Æiriksson
 796-820</GraveText>
@@ -124,7 +124,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Gunni ">
+      <Unit id="Gunni">
         <Name id="Name">Gunni Eysteinsson </Name>
         <GraveText id="GraveText"> Gunni Eysteinsson 
 798-814 </GraveText>
@@ -139,7 +139,7 @@
 
 
 
-      <Unit id="Hallveig ">
+      <Unit id="Hallveig">
         <Name id="Name">Hallveig Dunfjalldottir </Name>
         <GraveText id="GraveText"> Hallveig Dunfjalldottir 
 802-820 </GraveText>
@@ -152,7 +152,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Torhild ">
+      <Unit id="Torhild">
         <Name id="Name">Torhild Olafdottir </Name>
         <GraveText id="GraveText"> Torhild Olafdottir 
 803-820 </GraveText>
@@ -165,7 +165,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Thorfrid ">
+      <Unit id="Thorfrid">
         <Name id="Name">Thorfrid Øystendottir </Name>
         <GraveText id="GraveText"> Thorfrid Øystendottir 
 805-822 </GraveText>
@@ -178,7 +178,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Tola ">
+      <Unit id="Tola">
         <Name id="Name">Tola Gautidottir </Name>
         <GraveText id="GraveText"> Tola Gautidottir 
 798-812 </GraveText>
@@ -191,7 +191,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Ogn ">
+      <Unit id="Ogn">
         <Name id="Name">Ogn Isgautdottir </Name>
         <GraveText id="GraveText"> Ogn Isgautdottir 
 799-817 </GraveText>
@@ -204,7 +204,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Bjorg ">
+      <Unit id="Bjorg">
         <Name id="Name">Bjorg Ingjaldottir </Name>
         <GraveText id="GraveText"> Bjorg Ingjaldottir 
 796-815 </GraveText>
@@ -218,7 +218,7 @@
       </Unit>
 
 
-      <Unit id="Yri ">
+      <Unit id="Yri">
         <Name id="Name">Yri Liutdottir </Name>
         <GraveText id="GraveText"> Yri Liutdottir 
 800-830 </GraveText>
@@ -231,7 +231,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Gorm ">
+      <Unit id="Gorm">
         <Name id="Name">Gorm Styrkollrdottir </Name>
         <GraveText id="GraveText"> Gorm Styrkollrdottir 
 801-836 </GraveText>
@@ -244,7 +244,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Magnus ">
+      <Unit id="Magnus">
         <Name id="Name">Magnus Biorsson </Name>
         <GraveText id="GraveText"> Magnus Biorsson 
 803-819 </GraveText>
@@ -257,7 +257,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Ubbein ">
+      <Unit id="Ubbein">
         <Name id="Name">Ubbein Valgardsson </Name>
         <GraveText id="GraveText"> Ubbein Valgardsson 
 805-820 </GraveText>
@@ -283,7 +283,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Gunnbjorn ">
+      <Unit id="Gunnbjorn">
         <Name id="Name">Gunnbjorn Ærinmundsson </Name>
         <GraveText id="GraveText"> Gunnbjorn Ærinmundsson 
 799-810 </GraveText>
@@ -363,7 +363,7 @@
       </Unit>
 
 
-      <Unit id="Northri ">
+      <Unit id="Northri">
         <Name id="Name">Northri Asgautsson </Name>
         <GraveText id="GraveText"> Northri Asgautsson
 802-834 </GraveText>
@@ -1078,7 +1078,7 @@
 
     <UnitClass id="berserker">
 
-      <Unit id="Iogæir ">
+      <Unit id="Iogæir">
         <Name id="Name">Iogæir Brodd-Helgisson </Name>
         <GraveText id="GraveText">
           Iogæir Brodd-Helgisson
@@ -1093,7 +1093,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Blann ">
+      <Unit id="Blann">
         <Name id="Name">Blann Folkmarsson </Name>
         <GraveText id="GraveText">
           Blann Folkmarsson
@@ -1108,7 +1108,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Snorri ">
+      <Unit id="Snorri">
         <Name id="Name">Snorri Brondulfsson </Name>
         <GraveText id="GraveText">
           Snorri Brondulfsson
@@ -1123,7 +1123,7 @@
         </VillagerHints>
       </Unit>
 
-      <Unit id="Gardi ">
+      <Unit id="Gardi">
         <Name id="Name">Gardi Kætiløysson </Name>
         <GraveText id="GraveText">
           Gardi Kætiløysson

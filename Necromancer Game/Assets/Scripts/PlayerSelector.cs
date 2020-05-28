@@ -28,12 +28,10 @@ public class PlayerSelector : MonoBehaviour
 
     private void Update()
     {
-#if UNITY_EDITOR
         if (Input.GetKeyUp(KeyCode.Space))
         {
             SwapInputs();
         }
-#endif
     }
 
     /// <summary>
