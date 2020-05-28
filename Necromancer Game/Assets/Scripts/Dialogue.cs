@@ -76,5 +76,10 @@ public class Dialogue
             ///Search the xml file for something with this first name
             m_hintName = name;
         }
+
+        if (m_dialogueType == Dialogue_Types.Defender_Hint)
+        {
+            
+        }
     }
 }

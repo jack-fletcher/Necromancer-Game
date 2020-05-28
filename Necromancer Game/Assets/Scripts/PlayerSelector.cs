@@ -10,12 +10,12 @@ public class PlayerSelector : MonoBehaviour
     /// If a vr headset is connected, the game will default to this character
     /// </summary>
     [SerializeField]
-    private GameObject vr_Controller;
+    private GameObject vr_Controller = null;
     /// <summary>
     /// Otherwise, a first person character will be spawned - This is mostly for checking visual bugs.
     /// </summary>
     [SerializeField]
-    private GameObject fp_Controller;
+    private GameObject fp_Controller = null;
 
     /// <summary>
     /// Occurs before the first start method
