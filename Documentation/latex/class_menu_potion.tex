@@ -1,0 +1,101 @@
+\hypertarget{class_menu_potion}{}\doxysection{Menu\+Potion Class Reference}
+\label{class_menu_potion}\index{MenuPotion@{MenuPotion}}
+Inheritance diagram for Menu\+Potion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_menu_potion}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_menu_potion_a1b059730e09e172408439ec62f50c5fb}{On\+Potion\+Move}} ()
+\begin{DoxyCompactList}\small\item\em When potion is moved, do this \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_menu_potion_a9cb42a0d2a8695d78dd76bbe45e42f5a}{On\+Potion\+Activate}} ()
+\begin{DoxyCompactList}\small\item\em When a potion is activated, do this \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_potion_a08ce700b93e326acc6d37902412c3482}{Fade\+In}} (Color color, int time)
+\begin{DoxyCompactList}\small\item\em Fades the screen to a specified colour over time \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_menu_potion_ab92e684605aefb1a70e4a333024fd17c}{Fade\+Out}} (int time)
+\begin{DoxyCompactList}\small\item\em Clears the colour of faded screen over time \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_menu_potion_a86ec1df1ebc70acf120cddd59636dcb6}{Load\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Loads scene asyncronously \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_potion_a08ce700b93e326acc6d37902412c3482}\label{class_menu_potion_a08ce700b93e326acc6d37902412c3482}} 
+\index{MenuPotion@{MenuPotion}!FadeIn@{FadeIn}}
+\index{FadeIn@{FadeIn}!MenuPotion@{MenuPotion}}
+\doxysubsubsection{\texorpdfstring{FadeIn()}{FadeIn()}}
+{\footnotesize\ttfamily void Menu\+Potion.\+Fade\+In (\begin{DoxyParamCaption}\item[{Color}]{color,  }\item[{int}]{time }\end{DoxyParamCaption})}
+
+
+
+Fades the screen to a specified colour over time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Colour to fade to\\
+\hline
+{\em time} & Time it takes to fade\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_potion_ab92e684605aefb1a70e4a333024fd17c}\label{class_menu_potion_ab92e684605aefb1a70e4a333024fd17c}} 
+\index{MenuPotion@{MenuPotion}!FadeOut@{FadeOut}}
+\index{FadeOut@{FadeOut}!MenuPotion@{MenuPotion}}
+\doxysubsubsection{\texorpdfstring{FadeOut()}{FadeOut()}}
+{\footnotesize\ttfamily I\+Enumerator Menu\+Potion.\+Fade\+Out (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})}
+
+
+
+Clears the colour of faded screen over time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time it takes to fade out\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menu_potion_a86ec1df1ebc70acf120cddd59636dcb6}\label{class_menu_potion_a86ec1df1ebc70acf120cddd59636dcb6}} 
+\index{MenuPotion@{MenuPotion}!LoadScene@{LoadScene}}
+\index{LoadScene@{LoadScene}!MenuPotion@{MenuPotion}}
+\doxysubsubsection{\texorpdfstring{LoadScene()}{LoadScene()}}
+{\footnotesize\ttfamily I\+Enumerator Menu\+Potion.\+Load\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads scene asyncronously 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menu_potion_a9cb42a0d2a8695d78dd76bbe45e42f5a}\label{class_menu_potion_a9cb42a0d2a8695d78dd76bbe45e42f5a}} 
+\index{MenuPotion@{MenuPotion}!OnPotionActivate@{OnPotionActivate}}
+\index{OnPotionActivate@{OnPotionActivate}!MenuPotion@{MenuPotion}}
+\doxysubsubsection{\texorpdfstring{OnPotionActivate()}{OnPotionActivate()}}
+{\footnotesize\ttfamily virtual void Menu\+Potion.\+On\+Potion\+Activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+When a potion is activated, do this 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_menu_control_potion_aaf8106cb76a868158d1521888d1d682e}{Menu\+Control\+Potion}}, \mbox{\hyperlink{class_menu_exit_potion_a1d95a2897c9540eb4a6d536ac7f8990a}{Menu\+Exit\+Potion}}, \mbox{\hyperlink{class_menu_start_potion_a129c4c47ff3085eaf8b78c2afcc4d496}{Menu\+Start\+Potion}}, and \mbox{\hyperlink{class_menu_return_afeb67c194506dd9a75b54595deb210bf}{Menu\+Return}}.
+
+\mbox{\Hypertarget{class_menu_potion_a1b059730e09e172408439ec62f50c5fb}\label{class_menu_potion_a1b059730e09e172408439ec62f50c5fb}} 
+\index{MenuPotion@{MenuPotion}!OnPotionMove@{OnPotionMove}}
+\index{OnPotionMove@{OnPotionMove}!MenuPotion@{MenuPotion}}
+\doxysubsubsection{\texorpdfstring{OnPotionMove()}{OnPotionMove()}}
+{\footnotesize\ttfamily virtual void Menu\+Potion.\+On\+Potion\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+When potion is moved, do this 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+Documents/\+Git\+Hub/\+Necromancer-\/\+Game/\+Necromancer Game/\+Assets/\+Scripts/\mbox{\hyperlink{_menu_potion_8cs}{Menu\+Potion.\+cs}}\end{DoxyCompactItemize}

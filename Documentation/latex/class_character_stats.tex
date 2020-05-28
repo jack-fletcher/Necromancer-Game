@@ -1,0 +1,284 @@
+\hypertarget{class_character_stats}{}\doxysection{Character\+Stats Class Reference}
+\label{class_character_stats}\index{CharacterStats@{CharacterStats}}
+
+
+Meant to be inherited from. Shows stats of a character.  
+
+
+Inheritance diagram for Character\+Stats\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_character_stats}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_character_stats_a710592ecc183fb79d6d6a6496ca387d3}{Attack}} (\mbox{\hyperlink{class_character_stats}{Character\+Stats}} target)
+\item 
+void \mbox{\hyperlink{class_character_stats_a512ce406652866de470672cabdd4240e}{Take\+Damage}} (float damage, \mbox{\hyperlink{_enums_8cs_a393d9b9054d29abebebbb92343576381}{Attack\+\_\+\+Type}} \+\_\+at)
+\begin{DoxyCompactList}\small\item\em Removes the specified amount of health from the characters health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_stats_a0dc4be26cd5530edb17d6b596c5189ac}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Kills the character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_stats_a45d96a9c23801ee76fbee23a684ccded}{Deal\+Damage}} (\mbox{\hyperlink{class_character_stats}{Character\+Stats}} \+\_\+target)
+\item 
+virtual void \mbox{\hyperlink{class_character_stats_aea98934fa5cb9dd7abd58cdd52796fad}{Calculate\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the stats of a unit via a random range \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_enums_8cs_a0f2283609e8b4dd0457f89f95f4a3543}{Class\+\_\+\+Type}} \mbox{\hyperlink{class_character_stats_a88868ba395b7091712cded150e232e27}{m\+\_\+character\+Type}}
+\item 
+\mbox{\hyperlink{_enums_8cs_a393d9b9054d29abebebbb92343576381}{Attack\+\_\+\+Type}} \mbox{\hyperlink{class_character_stats_a3c641d4e545ecb36fd59f43abaecaa7e}{m\+\_\+attack\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of attack the character deals. Currently only physical, however has been added for later iterations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_character_stats_a0e134b7d945f0e014f4de6846dee0a90}{m\+\_\+level}} = 1
+\begin{DoxyCompactList}\small\item\em Level of the character -\/ Is not used in M.\+V.\+P, however may be used in M.\+A.\+P. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_character_stats_adcb30677ea5952cc00859d4bfbd8d8d6}{m\+\_\+endurance}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The players endurance level. Controls the health of the character and damage resistance. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a4eec767490587e35c6bf25a3c9667f1c}{m\+\_\+dexterity}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The dexterity of the character. Controls movement and attack speed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a55e3228760d4ebf650dc81862c5295ce}{m\+\_\+strength}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The strength of the character. affects physical damage. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a9f76a979e878475fdd248889620c618a}{m\+\_\+intelligence}} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The intelligence of the character. Currently unused, but affects magical damage and magical resistance. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a84341545f76e566104724a67fbf75149}{m\+\_\+max\+Health}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The maximum health of the character -\/ Governed by the endurance stat. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a1fc0560abb04d7cf37e019daa5f628d5}{m\+\_\+current\+Health}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_character_stats_a976ef643d85d9b62800997ce46989946}{m\+\_\+movement\+Speed}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The movement speed of the character -\/ Governed by the dexterity stat. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a27d06e19ff8d197b2c51da71502de7fc}{m\+\_\+attack\+Speed}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The attack speed of the character -\/ Governed by the dexterity stat. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_acd678a59150c539aab96b08f717894f7}{m\+\_\+physical\+Damage}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The physical damage this character deals -\/ Governed by strength. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a9e6d54fe501efed531c99260ac0e826d}{m\+\_\+spell\+Damage}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The magical damage this character deals -\/ Governed by intelligence, not used in M.\+V.\+P. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_adbc7bd0a21b69cc8d43f1e3b507aadf8}{m\+\_\+physical\+Resist}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The amount of physical damage as a percentage that the character resists. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_character_stats_a101ccf8813fea39459ecb96f7ebda6a2}{m\+\_\+spell\+Resist}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The amount of magical damage as a percentage that the character resists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Meant to be inherited from. Shows stats of a character. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_character_stats_a710592ecc183fb79d6d6a6496ca387d3}\label{class_character_stats_a710592ecc183fb79d6d6a6496ca387d3}} 
+\index{CharacterStats@{CharacterStats}!Attack@{Attack}}
+\index{Attack@{Attack}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Character\+Stats.\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character_stats}{Character\+Stats}}}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_character_stats_aea98934fa5cb9dd7abd58cdd52796fad}\label{class_character_stats_aea98934fa5cb9dd7abd58cdd52796fad}} 
+\index{CharacterStats@{CharacterStats}!CalculateStats@{CalculateStats}}
+\index{CalculateStats@{CalculateStats}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{CalculateStats()}{CalculateStats()}}
+{\footnotesize\ttfamily virtual void Character\+Stats.\+Calculate\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the stats of a unit via a random range 
+
+Decide attack type
+
+Calculate attributes
+
+Decide attack type
+
+Calculate attributes
+
+Decide attack type
+
+Calculate attributes
+
+Calculate Stats from attributes\mbox{\Hypertarget{class_character_stats_a45d96a9c23801ee76fbee23a684ccded}\label{class_character_stats_a45d96a9c23801ee76fbee23a684ccded}} 
+\index{CharacterStats@{CharacterStats}!DealDamage@{DealDamage}}
+\index{DealDamage@{DealDamage}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{DealDamage()}{DealDamage()}}
+{\footnotesize\ttfamily void Character\+Stats.\+Deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character_stats}{Character\+Stats}}}]{\+\_\+target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_character_stats_a0dc4be26cd5530edb17d6b596c5189ac}\label{class_character_stats_a0dc4be26cd5530edb17d6b596c5189ac}} 
+\index{CharacterStats@{CharacterStats}!Die@{Die}}
+\index{Die@{Die}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Character\+Stats.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Kills the character. 
+
+\mbox{\Hypertarget{class_character_stats_a512ce406652866de470672cabdd4240e}\label{class_character_stats_a512ce406652866de470672cabdd4240e}} 
+\index{CharacterStats@{CharacterStats}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily void Character\+Stats.\+Take\+Damage (\begin{DoxyParamCaption}\item[{float}]{damage,  }\item[{\mbox{\hyperlink{_enums_8cs_a393d9b9054d29abebebbb92343576381}{Attack\+\_\+\+Type}}}]{\+\_\+at }\end{DoxyParamCaption})}
+
+
+
+Removes the specified amount of health from the characters health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & The damage that is taken. \\
+\hline
+\end{DoxyParams}
+Calculate the resistance that the character takes from that type of attack
+
+Remove the amount of resistance from the damage
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_character_stats_a3c641d4e545ecb36fd59f43abaecaa7e}\label{class_character_stats_a3c641d4e545ecb36fd59f43abaecaa7e}} 
+\index{CharacterStats@{CharacterStats}!m\_attackType@{m\_attackType}}
+\index{m\_attackType@{m\_attackType}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_attackType}{m\_attackType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enums_8cs_a393d9b9054d29abebebbb92343576381}{Attack\+\_\+\+Type}} Character\+Stats.\+m\+\_\+attack\+Type}
+
+
+
+The type of attack the character deals. Currently only physical, however has been added for later iterations. 
+
+\mbox{\Hypertarget{class_character_stats_a88868ba395b7091712cded150e232e27}\label{class_character_stats_a88868ba395b7091712cded150e232e27}} 
+\index{CharacterStats@{CharacterStats}!m\_characterType@{m\_characterType}}
+\index{m\_characterType@{m\_characterType}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_characterType}{m\_characterType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enums_8cs_a0f2283609e8b4dd0457f89f95f4a3543}{Class\+\_\+\+Type}} Character\+Stats.\+m\+\_\+character\+Type}
+
+\mbox{\Hypertarget{class_character_stats_a0e134b7d945f0e014f4de6846dee0a90}\label{class_character_stats_a0e134b7d945f0e014f4de6846dee0a90}} 
+\index{CharacterStats@{CharacterStats}!m\_level@{m\_level}}
+\index{m\_level@{m\_level}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_level}{m\_level}}
+{\footnotesize\ttfamily int Character\+Stats.\+m\+\_\+level = 1}
+
+
+
+Level of the character -\/ Is not used in M.\+V.\+P, however may be used in M.\+A.\+P. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_character_stats_a27d06e19ff8d197b2c51da71502de7fc}\label{class_character_stats_a27d06e19ff8d197b2c51da71502de7fc}} 
+\index{CharacterStats@{CharacterStats}!m\_attackSpeed@{m\_attackSpeed}}
+\index{m\_attackSpeed@{m\_attackSpeed}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_attackSpeed}{m\_attackSpeed}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+attack\+Speed = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The attack speed of the character -\/ Governed by the dexterity stat. 
+
+\mbox{\Hypertarget{class_character_stats_a1fc0560abb04d7cf37e019daa5f628d5}\label{class_character_stats_a1fc0560abb04d7cf37e019daa5f628d5}} 
+\index{CharacterStats@{CharacterStats}!m\_currentHealth@{m\_currentHealth}}
+\index{m\_currentHealth@{m\_currentHealth}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_currentHealth}{m\_currentHealth}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+current\+Health = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_character_stats_a4eec767490587e35c6bf25a3c9667f1c}\label{class_character_stats_a4eec767490587e35c6bf25a3c9667f1c}} 
+\index{CharacterStats@{CharacterStats}!m\_dexterity@{m\_dexterity}}
+\index{m\_dexterity@{m\_dexterity}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_dexterity}{m\_dexterity}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+dexterity = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The dexterity of the character. Controls movement and attack speed. 
+
+\mbox{\Hypertarget{class_character_stats_adcb30677ea5952cc00859d4bfbd8d8d6}\label{class_character_stats_adcb30677ea5952cc00859d4bfbd8d8d6}} 
+\index{CharacterStats@{CharacterStats}!m\_endurance@{m\_endurance}}
+\index{m\_endurance@{m\_endurance}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_endurance}{m\_endurance}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+endurance = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The players endurance level. Controls the health of the character and damage resistance. 
+
+\mbox{\Hypertarget{class_character_stats_a9f76a979e878475fdd248889620c618a}\label{class_character_stats_a9f76a979e878475fdd248889620c618a}} 
+\index{CharacterStats@{CharacterStats}!m\_intelligence@{m\_intelligence}}
+\index{m\_intelligence@{m\_intelligence}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_intelligence}{m\_intelligence}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+intelligence = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The intelligence of the character. Currently unused, but affects magical damage and magical resistance. 
+
+\mbox{\Hypertarget{class_character_stats_a84341545f76e566104724a67fbf75149}\label{class_character_stats_a84341545f76e566104724a67fbf75149}} 
+\index{CharacterStats@{CharacterStats}!m\_maxHealth@{m\_maxHealth}}
+\index{m\_maxHealth@{m\_maxHealth}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_maxHealth}{m\_maxHealth}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+max\+Health = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The maximum health of the character -\/ Governed by the endurance stat. 
+
+\mbox{\Hypertarget{class_character_stats_a976ef643d85d9b62800997ce46989946}\label{class_character_stats_a976ef643d85d9b62800997ce46989946}} 
+\index{CharacterStats@{CharacterStats}!m\_movementSpeed@{m\_movementSpeed}}
+\index{m\_movementSpeed@{m\_movementSpeed}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_movementSpeed}{m\_movementSpeed}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+movement\+Speed = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The movement speed of the character -\/ Governed by the dexterity stat. 
+
+\mbox{\Hypertarget{class_character_stats_acd678a59150c539aab96b08f717894f7}\label{class_character_stats_acd678a59150c539aab96b08f717894f7}} 
+\index{CharacterStats@{CharacterStats}!m\_physicalDamage@{m\_physicalDamage}}
+\index{m\_physicalDamage@{m\_physicalDamage}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_physicalDamage}{m\_physicalDamage}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+physical\+Damage = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The physical damage this character deals -\/ Governed by strength. 
+
+\mbox{\Hypertarget{class_character_stats_adbc7bd0a21b69cc8d43f1e3b507aadf8}\label{class_character_stats_adbc7bd0a21b69cc8d43f1e3b507aadf8}} 
+\index{CharacterStats@{CharacterStats}!m\_physicalResist@{m\_physicalResist}}
+\index{m\_physicalResist@{m\_physicalResist}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_physicalResist}{m\_physicalResist}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+physical\+Resist = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The amount of physical damage as a percentage that the character resists. 
+
+\mbox{\Hypertarget{class_character_stats_a9e6d54fe501efed531c99260ac0e826d}\label{class_character_stats_a9e6d54fe501efed531c99260ac0e826d}} 
+\index{CharacterStats@{CharacterStats}!m\_spellDamage@{m\_spellDamage}}
+\index{m\_spellDamage@{m\_spellDamage}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_spellDamage}{m\_spellDamage}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+spell\+Damage = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The magical damage this character deals -\/ Governed by intelligence, not used in M.\+V.\+P. 
+
+\mbox{\Hypertarget{class_character_stats_a101ccf8813fea39459ecb96f7ebda6a2}\label{class_character_stats_a101ccf8813fea39459ecb96f7ebda6a2}} 
+\index{CharacterStats@{CharacterStats}!m\_spellResist@{m\_spellResist}}
+\index{m\_spellResist@{m\_spellResist}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_spellResist}{m\_spellResist}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+spell\+Resist = 0\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The amount of magical damage as a percentage that the character resists. 
+
+\mbox{\Hypertarget{class_character_stats_a55e3228760d4ebf650dc81862c5295ce}\label{class_character_stats_a55e3228760d4ebf650dc81862c5295ce}} 
+\index{CharacterStats@{CharacterStats}!m\_strength@{m\_strength}}
+\index{m\_strength@{m\_strength}!CharacterStats@{CharacterStats}}
+\doxysubsubsection{\texorpdfstring{m\_strength}{m\_strength}}
+{\footnotesize\ttfamily float Character\+Stats.\+m\+\_\+strength = 1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The strength of the character. affects physical damage. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+Documents/\+Git\+Hub/\+Necromancer-\/\+Game/\+Necromancer Game/\+Assets/\+Scripts/\mbox{\hyperlink{_character_stats_8cs}{Character\+Stats.\+cs}}\end{DoxyCompactItemize}
