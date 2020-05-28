@@ -58,6 +58,6 @@ public class Dialogue
 
     public void SetHintName()
     {
-
+      //  m_hintName = XMLManager.Instance.ReadSingleNodeData("//*[@id='EnemyUnits']//*[@id='{m_hintName}']//*[@id='Hints']");
     }
 }
