@@ -27,6 +27,7 @@ public class GraveManager : MonoBehaviour
        
     }
 
+    
     /// <summary>
     /// Sets up each grave with a class and part type and adds text to the gravestone
     /// </summary>
@@ -48,7 +49,6 @@ public class GraveManager : MonoBehaviour
             int idx = UnityEngine.Random.Range(0, Enum.GetValues(typeof(Class_Type)).Length);
 
             Class_Type _ct = (Class_Type)idx;
-            Debug.Log(idx + "and class type: " + _ct.ToString());
             switch (_ct)
             {
                 case Class_Type.berserker:
@@ -72,12 +72,13 @@ public class GraveManager : MonoBehaviour
             ///Set text on grave
             string _ctName = _ct.ToString();
 
-            string query = $"(//*[@id='{_ctName}']//*[@id='GraveText'])[{counter}]";
+            string query = $"(//*[@id='FriendlyUnits']//*[@id='{_ctName}']//*[@id='GraveText'])[{counter}]";
             string graveText = XMLManager.Instance.ReadSingleNodeData(query);
 
             if (graveText == null)
             {
-                graveText = "Dummy Text";
+                Debug.LogError("text not found for: " + _ctName + " dummy text set.");
+                graveText = "Dummy Text for: " + _ctName;
             }
 
             _gravestone.SetCanvasText(graveText);
@@ -91,7 +92,12 @@ public class GraveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+#if UNITY_EDITOR
+        if (Input.GetKeyUp(KeyCode.Alpha9))
+        {
+            Setup();
+        }
+#endif
     }
 
 

@@ -9,13 +9,13 @@
       <Unit id="Guda">
         <Name id="Name"> Guda Halvdansson</Name>
         <GraveText id="GraveText"> Guda Halvdansson
-2019-2020 
+793-815 
       </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 1 </Hint1>
-          <Hint2> XML Dialogue 2 </Hint2>
-          <Hint3> XML Dialogue 3</Hint3>
+          <Hint1> Guda was my husband </Hint1>
+          <Hint2> A valiant knight </Hint2>
+          <Hint3> of Pella's Wish</Hint3>
 
         </VillagerHints>
       </Unit>
@@ -23,12 +23,12 @@
       <Unit id="Iarlabanki">
         <Name id="Name"> Iarlabanki Skeggsson </Name>
         <GraveText id="GraveText"> Iarlabanki Skeggsson
-2019-2020 </GraveText>
+796-818  </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Iarlabanki was a member of that table</Hint1>
+          <Hint2> Square table was it? </Hint2>
+          <Hint3> No, that doesn't sound right... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -36,12 +36,12 @@
       <Unit id="Jarlabanki">
         <Name id="Name"> Jarlabanki Thorkelsson</Name>
         <GraveText id="GraveText"> Jarlabanki Thorkelsson
-2019-2020 </GraveText>
+799-818 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 1 </Hint1>
-          <Hint2> XML Dialogue 2 </Hint2>
-          <Hint3> XML Dialogue 3 </Hint3>
+          <Hint1> Jarlabanki really didn't like the daytime </Hint1>
+          <Hint2> He loved going out at knight </Hint2>
+          <Hint3> Hmm... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -49,12 +49,12 @@
       <Unit id="Hallfred ">
         <Name id="Name"> Hallfred Asgeirsson</Name>
         <GraveText id="GraveText"> Hallfred Asgeirsson 
-2019-2020 </GraveText>
+796-818 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Hallfred was a knight owl </Hint1>
+          <Hint2> Sometimes we wouldn't see him all day </Hint2>
+          <Hint3> He as a member of a table </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -62,12 +62,12 @@
       <Unit id="Throst ">
         <Name id="Name">Throst Æiriksson </Name>
         <GraveText id="GraveText"> Throst Æiriksson
-2019-2020 </GraveText>
+796-820</GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Throst was a knight... </Hint1>
+          <Hint2> He died last week </Hint2>
+          <Hint3> I miss him </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -75,12 +75,12 @@
       <Unit id="Æsbiorn">
         <Name id="Name">Æsbiorn Ysoppasson </Name>
         <GraveText id="GraveText"> Æsbiorn Ysoppasson 
-2019-2020 </GraveText>
+798-818</GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Æsbiorn died valiantly protecting his king </Hint1>
+          <Hint2> They awarded him the highest honour a knight </Hint2>
+          <Hint3> may receive. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -88,12 +88,12 @@
       <Unit id="Orrin">
         <Name id="Name">Orrin Marsson </Name>
         <GraveText id="GraveText"> Orrin Marsson 
-2019-2020 </GraveText>
+798-815 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Orrin was a knight in the service of the King </Hint1>
+          <Hint2> He got sick and passed away </Hint2>
+          <Hint3> I visit him in the graveyard every day </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -101,12 +101,12 @@
       <Unit id="Ofieg">
         <Name id="Name">Ofieg Beinersson </Name>
         <GraveText id="GraveText"> Ofieg Beinersson 
-2019-2020 </GraveText>
+799-816 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Ofieg was a respectable man </Hint1>
+          <Hint2> He was in the service of the King </Hint2>
+          <Hint3> Rest in peace, Ofieg. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -114,12 +114,12 @@
       <Unit id="Sigtrygg">
         <Name id="Name">Sigtrygg Asvaldsson </Name>
         <GraveText id="GraveText"> Sigtrygg Asvaldsson 
-2019-2020 </GraveText>
+800-817 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Do you get to the Cloud District often? </Hint1>
+          <Hint2> Oh, who am I kidding, you're no knight </Hint2>
+          <Hint3> unlike Sigtrygg </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -127,12 +127,12 @@
       <Unit id="Gunni ">
         <Name id="Name">Gunni Eysteinsson </Name>
         <GraveText id="GraveText"> Gunni Eysteinsson 
-2019-2020 </GraveText>
+798-814 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> my husband, Gunni died in battle. </Hint1>
+          <Hint2> They recovered his body and buried him honourably. </Hint2>
+          <Hint3> I'll never forget his posthumous knighthood. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -142,12 +142,12 @@
       <Unit id="Hallveig ">
         <Name id="Name">Hallveig Dunfjalldottir </Name>
         <GraveText id="GraveText"> Hallveig Dunfjalldottir 
-2019-2020 </GraveText>
+802-820 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Hallveig was a callous man </Hint1>
+          <Hint2> He didn't deserve to be knighted. </Hint2>
+          <Hint3> I hope he rots. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -155,12 +155,12 @@
       <Unit id="Torhild ">
         <Name id="Name">Torhild Olafdottir </Name>
         <GraveText id="GraveText"> Torhild Olafdottir 
-2019-2020 </GraveText>
+803-820 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Torhild was my brother </Hint1>
+          <Hint2> He was knighted after his death </Hint2>
+          <Hint3> For saving the Kings daughter </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -168,12 +168,12 @@
       <Unit id="Thorfrid ">
         <Name id="Name">Thorfrid Øystendottir </Name>
         <GraveText id="GraveText"> Thorfrid Øystendottir 
-2019-2020 </GraveText>
+805-822 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Thorfrid was a legendary fighter </Hint1>
+          <Hint2> They say he fought with the strength of seven men </Hint2>
+          <Hint3> He lays in valhalla now... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -181,12 +181,12 @@
       <Unit id="Tola ">
         <Name id="Name">Tola Gautidottir </Name>
         <GraveText id="GraveText"> Tola Gautidottir 
-2019-2020 </GraveText>
+798-812 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Tola was a religious man. </Hint1>
+          <Hint2> I'm surprised he turned to knighthood </Hint2>
+          <Hint3> He always seemed like more of a cleric </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -194,12 +194,12 @@
       <Unit id="Ogn ">
         <Name id="Name">Ogn Isgautdottir </Name>
         <GraveText id="GraveText"> Ogn Isgautdottir 
-2019-2020 </GraveText>
+799-817 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Ogn was a brave knight who died facing the Kraken </Hint1>
+          <Hint2> I visit his grave every day </Hint2>
+          <Hint3> He saved us... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -207,12 +207,12 @@
       <Unit id="Bjorg ">
         <Name id="Name">Bjorg Ingjaldottir </Name>
         <GraveText id="GraveText"> Bjorg Ingjaldottir 
-2019-2020 </GraveText>
+796-815 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Bjorg was a knight </Hint1>
+          <Hint2> in the Kings personal retinue </Hint2>
+          <Hint3> Rest in peace </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -221,12 +221,12 @@
       <Unit id="Yri ">
         <Name id="Name">Yri Liutdottir </Name>
         <GraveText id="GraveText"> Yri Liutdottir 
-2019-2020 </GraveText>
+800-830 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Yri was my son </Hint1>
+          <Hint2> He went off to explore the world </Hint2>
+          <Hint3> Last I saw before his corpse came back was his knights banner in the distance </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -234,12 +234,12 @@
       <Unit id="Gorm ">
         <Name id="Name">Gorm Styrkollrdottir </Name>
         <GraveText id="GraveText"> Gorm Styrkollrdottir 
-2019-2020 </GraveText>
+801-836 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Gorm was a knight in the Kings army </Hint1>
+          <Hint2> he led his battalion to victory </Hint2>
+          <Hint3> But he couldn't beat his sickness</Hint3>
 
         </VillagerHints>
       </Unit>
@@ -247,12 +247,12 @@
       <Unit id="Magnus ">
         <Name id="Name">Magnus Biorsson </Name>
         <GraveText id="GraveText"> Magnus Biorsson 
-2019-2020 </GraveText>
+803-819 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Magnus was a knight in the Kings army </Hint1>
+          <Hint2> He fell from the tavern roof while drunk </Hint2>
+          <Hint3>  </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -260,12 +260,12 @@
       <Unit id="Ubbein ">
         <Name id="Name">Ubbein Valgardsson </Name>
         <GraveText id="GraveText"> Ubbein Valgardsson 
-2019-2020 </GraveText>
+805-820 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Ubbein was a strange guy </Hint1>
+          <Hint2> I heard he blackmailed the king into his knighthood </Hint2>
+          <Hint3> Not sure what happened to him after... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -273,12 +273,12 @@
       <Unit id="Sigewine">
         <Name id="Name">Sigewine Ospaksson </Name>
         <GraveText id="GraveText"> Sigewine Ospaksson 
-2019-2020 </GraveText>
+798-816 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Sigewine was a knight </Hint1>
+          <Hint2> He led his regiment to many victories </Hint2>
+          <Hint3> But he got too cocky and lost his head... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -286,12 +286,12 @@
       <Unit id="Gunnbjorn ">
         <Name id="Name">Gunnbjorn Ærinmundsson </Name>
         <GraveText id="GraveText"> Gunnbjorn Ærinmundsson 
-2019-2020 </GraveText>
+799-810 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Gunnbjorn was a simple man </Hint1>
+          <Hint2> He was knighted for bringing the people together </Hint2>
+          <Hint3> Gods rest his soul </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -299,12 +299,12 @@
       <Unit id="Sveni">
         <Name id="Name">Sveni Korisson </Name>
         <GraveText id="GraveText"> Sveni Korisson 
-2019-2020 </GraveText>
+804-820 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Sveni was a knight from out of town </Hint1>
+          <Hint2> He came here to drink, but had bad blood from some residents </Hint2>
+          <Hint3> We tried to give him a respectful burial, but there wasn't much left... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -312,12 +312,12 @@
       <Unit id="Asfrith">
         <Name id="Name">Asfrith Isleifsson </Name>
         <GraveText id="GraveText"> Asfrith Isleifsson 
-2019-2020 </GraveText>
+799-813 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Asfrith was a soldier in the war </Hint1>
+          <Hint2> Not sure what happened, but he was knighted on return </Hint2>
+          <Hint3> He died in the great plague... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -325,12 +325,12 @@
       <Unit id="Leiknir">
         <Name id="Name">Leiknir Northrisson </Name>
         <GraveText id="GraveText"> Leiknir Northrisson 
-2019-2020 </GraveText>
+802-821 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Leiknir was a strange man </Hint1>
+          <Hint2> He was short and spoke quickly </Hint2>
+          <Hint3>He was knighted by the king and became his personal advisor </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -338,12 +338,12 @@
       <Unit id="Svan">
         <Name id="Name">Svan Isisson </Name>
         <GraveText id="GraveText"> Svan Isisson 
-2019-2020 </GraveText>
+798-818 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Svan loved swimming </Hint1>
+          <Hint2> He wasn't the brightest though, and one day forgot to take his armour off before swimming </Hint2>
+          <Hint3> He sank to the bottom of the river and couldn't get up... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -352,12 +352,12 @@
       <Unit id="Hrifla">
         <Name id="Name">Hrifla Audgislisson </Name>
         <GraveText id="GraveText"> Hrifla Audgislisson 
-2019-2020 </GraveText>
+798-821 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Hrifla came to us from Fallkirk, he was a knight there </Hint1>
+          <Hint2> I believe he died peacefully in his sleep last week </Hint2>
+          <Hint3> I wonder if his family know... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -366,12 +366,12 @@
       <Unit id="Northri ">
         <Name id="Name">Northri Asgautsson </Name>
         <GraveText id="GraveText"> Northri Asgautsson
-2019-2020 </GraveText>
+802-834 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Northri was a knight of the round table </Hint1>
+          <Hint2> He kept it a secret, but we always knew </Hint2>
+          <Hint3> Rest in peace... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -380,12 +380,12 @@
       <Unit id="Guthrum">
         <Name id="Name">Guthrum Gudbrandsson </Name>
         <GraveText id="GraveText"> Guthrum Gudbrandsson 
-2019-2020 </GraveText>
+805-833 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Guthrum was knighted posthumously </Hint1>
+          <Hint2> For risking his life to find a cure </Hint2>
+          <Hint3> to the great plague </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -393,12 +393,12 @@
       <Unit id="Thorarin">
         <Name id="Name">Thorarin Hromundsson </Name>
         <GraveText id="GraveText"> Thorarin Hromundsson 
-2019-2020 </GraveText>
+802-824 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Thorarin... That's a name I haven't heard in awhile </Hint1>
+          <Hint2> He was a knight of the round table </Hint2>
+          <Hint3> I don't think he has any family left... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -407,12 +407,12 @@
       <Unit id="Ingi">
         <Name id="Name">Ingi Ornsson </Name>
         <GraveText id="GraveText"> Ingi Ornsson 
-2019-2020 </GraveText>
+799-810 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Not much is known about Ingri </Hint1>
+          <Hint2> He was a wandering sellsword </Hint2>
+          <Hint3> I believe he was a knight of some far off land... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -420,12 +420,12 @@
       <Unit id="Thrain">
         <Name id="Name">Thrain Skœdirsson </Name>
         <GraveText id="GraveText"> Thrain Skœdirsson
-2019-2020 </GraveText>
+798-812 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Thrain lived out of trouble until he was about 18 </Hint1>
+          <Hint2> He wanted to become a knight </Hint2>
+          <Hint3> but died before he could get there... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -433,12 +433,12 @@
       <Unit id="Eydis">
         <Name id="Name">Eydis Vandilsson </Name>
         <GraveText id="GraveText"> Eydis Vandilsson 
-2019-2020 </GraveText>
+800-822 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Eydis Vandilsson... That's a name I haven't heard in awhile </Hint1>
+          <Hint2> I heard he was knighted  </Hint2>
+          <Hint3> Not sure why </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -447,12 +447,12 @@
       <Unit id="Aron">
         <Name id="Name">Aron Unisson </Name>
         <GraveText id="GraveText"> Aron Unisson 
-2019-2020 </GraveText>
+803-818 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Oh once was a braggart named Aron the light </Hint1>
+          <Hint2> He came down from Caelfall as an old sombre knight </Hint2>
+          <Hint3> And drank til he couldn't get up anymore </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -460,25 +460,25 @@
       <Unit id="Ondott">
         <Name id="Name">Ondott Fargrimsson </Name>
         <GraveText id="GraveText"> Ondott Fargrimsson 
-2019-2020 </GraveText>
+799-813 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Back in the day there was a man called Ondott </Hint1>
+          <Hint2> He was the fiercest knight in all of Fallkirk </Hint2>
+          <Hint3> He fought off an entire army of goblins before falling to his wounds </Hint3>
 
         </VillagerHints>
       </Unit>
 
       <Unit id="Øybiorn">
         <Name id="Name">Øybiorn Mannisson </Name>
-        <GraveText id="GraveText"> Øybiorn Mannisson 
-2019-2020 </GraveText>
+        <GraveText id="GraveText">Øybiorn Mannisson 
+798-818 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Aye, Øybiorn was a legendary fighter </Hint1>
+          <Hint2> They say he swung his sword with the power of Odin </Hint2>
+          <Hint3> He got a posthumous knighthood... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -486,12 +486,12 @@
       <Unit id="Gufi">
         <Name id="Name">Gufi Gudleifsson </Name>
         <GraveText id="GraveText"> Gufi Gudleifsson 
-2019-2020 </GraveText>
+800-820 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Gufi always loved dogs </Hint1>
+          <Hint2> He used to bring them on hunts while guarding the King </Hint2>
+          <Hint3> He was a knight, you know... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -520,12 +520,12 @@
       <Unit id="Sverting">
         <Name id="Name">Sverting Hlennisson </Name>
         <GraveText id="GraveText"> Sverting Hlennisson 
-2019-2020 </GraveText>
+798-818 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Sverting was an angry man </Hint1>
+          <Hint2> He used to go berserk at people for nothing </Hint2>
+          <Hint3> Never used to wear any clothes... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -533,12 +533,12 @@
       <Unit id="Haf">
         <Name id="Name">Haf Njalsson </Name>
         <GraveText id="GraveText"> Haf Njalsson 
-2019-2020 </GraveText>
+799-820 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Haf was a small guy </Hint1>
+          <Hint2> Think he was married to someone in the village </Hint2>
+          <Hint3> He was a strongman </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -546,16 +546,202 @@
       <Unit id="Ljot">
         <Name id="Name">Ljot Starolfsson </Name>
         <GraveText id="GraveText"> Ljot Starolfsson 
-2019-2020 </GraveText>
+805-815 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Ljot was an angry man </Hint1>
+          <Hint2> He was really aggressive when drunk </Hint2>
+          <Hint3> Took three knights to restrain him </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Thokodolf">
+        <Name id="Name">Thokodolf Larlabankisson </Name>
+        <GraveText id="GraveText">
+          Thokodolf Larlabankisson
+799-812
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Thokodolf was a simple guy </Hint1>
+          <Hint2> He really liked ferrets so he lived in the woods with them </Hint2>
+          <Hint3> He was trampled by a bear... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Ornulf">
+        <Name id="Name">Ornulf Helgisson </Name>
+        <GraveText id="GraveText">
+          Ornulf Helgisson
+          798-816
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Ornulf was a strange one </Hint1>
+          <Hint2> He used to fight in arena battles </Hint2>
+          <Hint3> He retired to spend time with his family, I think </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Wengo">
+        <Name id="Name">Wengo Arfastsson </Name>
+        <GraveText id="GraveText">
+          Wengo Arfastsson
+          801-820
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Wengo was an engineer </Hint1>
+          <Hint2> But he really enjoyed fighting </Hint2>
+          <Hint3> Not sure what happened to him... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Øybiorn">
+        <Name id="Name">Øybiorn Olæifsson </Name>
+        <GraveText id="GraveText">
+          Øybiorn Olæifsson
+          799-817
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Øybiorn Olæifsson... </Hint1>
+          <Hint2> He was a berserker in the Kings army. </Hint2>
+          <Hint3> Died in '17 I think. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Asbrand">
+        <Name id="Name">Asbrand Sigvaldisson </Name>
+        <GraveText id="GraveText">
+          Asbrand Sigvaldisson
+          801-820
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Asbrand was my brother </Hint1>
+          <Hint2> He was a good guy, but a bit misguided </Hint2>
+          <Hint3> He wore warpaint before going into battle </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Aron">
+        <Name id="Name">Aron Sveinsson</Name>
+        <GraveText id="GraveText">
+          Aron Sveinsson
+          803-820
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Aron was a screamer </Hint1>
+          <Hint2> He used to shout at his enemies in battle to break their morale </Hint2>
+          <Hint3> It was pretty successful, til he got hit by an arrow... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Gunnhautr">
+        <Name id="Name">Gunnhautr Hiorvardsson</Name>
+        <GraveText id="GraveText">
+          Gunnhautr Hiorvardsson
+          799-810
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Gunnhautr always knew where to hit a guy to hurt the most </Hint1>
+          <Hint2> He was a berserker in the Kings personal retinue </Hint2>
+          <Hint3> Not sure what happened to him... </Hint3>
 
         </VillagerHints>
       </Unit>
 
+      <Unit id="Floki">
+        <Name id="Name">Floki Steinbitrsson</Name>
+        <GraveText id="GraveText">
+          Floki Steinbitrsson
+          789-801
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Floki went mad at the end </Hint1>
+          <Hint2> Killed several people from Caelfall </Hint2>
+          <Hint3> They brought his body back here at the end </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Dyri">
+        <Name id="Name">Dyri Bretakollrsson</Name>
+        <GraveText id="GraveText">
+          Dyri Bretakollrsson
+          805-825
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Dyri was supposed to join the army </Hint1>
+          <Hint2> But he was too much of a liability </Hint2>
+          <Hint3> They ended up giving him a sword and telling him which direction to go </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Arnthor">
+        <Name id="Name">Arnthor Dagfinnsson</Name>
+        <GraveText id="GraveText">
+          Arnthor Dagfinnsson
+          798-825
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Arnthor was a barbarian </Hint1>
+          <Hint2> He was from out of town </Hint2>
+          <Hint3> He died peacefully though </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Haklang">
+        <Name id="Name">Haklang Athilsson</Name>
+        <GraveText id="GraveText">
+          Haklang Athilsson
+          799-822
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Haklang was a good guy </Hint1>
+          <Hint2> Though a bit angry </Hint2>
+          <Hint3> Think he died in a bar fight </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Audun">
+        <Name id="Name">Audun Gudrodsson</Name>
+        <GraveText id="GraveText">
+          Audun Gudrodsson
+          802-823
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Audun was a knight until he got dishonourably discharged </Hint1>
+          <Hint2> Then he became a berserker </Hint2>
+          <Hint3> Not sure what happened after </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Hanef">
+        <Name id="Name">Hanef Storolfsson</Name>
+        <GraveText id="GraveText">
+          Hanef Storolfsson
+          798-815
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Hanef was a good guy, but simple </Hint1>
+          <Hint2> and when he got confused, he got angry </Hint2>
+          <Hint3> He made a good berserker in the army </Hint3>
+
+        </VillagerHints>
+      </Unit>
     </UnitClass>
 
     <UnitClass id="thief">
@@ -563,12 +749,12 @@
       <Unit id="Audgisil">
         <Name id="Name">Audgisil Vestgeirsson </Name>
         <GraveText id="GraveText"> Audgisil Vestgeirsson 
-2019-2020 </GraveText>
+799-815 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Audgisil was a dirty thief. </Hint1>
+          <Hint2> Glad they did what they did. </Hint2>
+          <Hint3> Good riddance. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -577,12 +763,12 @@
       <Unit id="Ingimar">
         <Name id="Name">Ingimar Mursisson </Name>
         <GraveText id="GraveText"> Ingimar Mursisson 
-2019-2020 </GraveText>
+799-817 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Ingimar was one of those sneaky types eh? </Hint1>
+          <Hint2> Didn't like the look of him at all. </Hint2>
+          <Hint3> Hmm... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -591,12 +777,12 @@
       <Unit id="Ludin">
         <Name id="Name">Ludin Herjolfsson </Name>
         <GraveText id="GraveText"> Ludin Herjolfsson 
-2019-2020 </GraveText>
+800-817 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1>Ludin was caught stealing from the market. </Hint1>
+          <Hint2> They cut off his left hand, but he continued anyways. </Hint2>
+          <Hint3> Filthy thief. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -605,16 +791,213 @@
       <Unit id="Isulf">
         <Name id="Name">Isulf Geirsteinsson </Name>
         <GraveText id="GraveText"> Isulf Geirsteinsson 
-2019-2020 </GraveText>
+799-819 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Isulf? Why ya looking for him? </Hint1>
+          <Hint2> He died a long time ago. </Hint2>
+          <Hint3> Pretty famous thief 'round these parts actually </Hint3>
 
         </VillagerHints>
       </Unit>
 
+      <Unit id="Thorfinn">
+        <Name id="Name">Thorfinn Eldgrimsson</Name>
+        <GraveText id="GraveText">
+          Thorfinn Eldgrimsson
+          798-818
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Thorfinn was a personal spy of the Kings. </Hint1>
+          <Hint2> Not sure what happened to him </Hint2>
+          <Hint3> Heard he was a pretty successful thief... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Gardar">
+        <Name id="Name">Gardar Glumsson</Name>
+        <GraveText id="GraveText">
+          Gardar Glumsson
+          798-817
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Gardar Glumsson? That sounds familiar... </Hint1>
+          <Hint2> Was he the white fox? the brown fox? no, that doesn't sound right... </Hint2>
+          <Hint3> I think the guards were looking for him. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Thorvid">
+        <Name id="Name">Thorvid Edgarsson</Name>
+        <GraveText id="GraveText">
+          Thorvid Edgarsson
+          798-814
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Thorvid was a petty thief. </Hint1>
+          <Hint2> He used to distract people with firecrackers then steal from them. </Hint2>
+          <Hint3> Took a long time before he was caught. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Hlodvir">
+        <Name id="Name">Hlodvir Borksson</Name>
+        <GraveText id="GraveText">
+          Hlodvir Borksson
+          798-817
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Hlodvir Borksson was a criminal. </Hint1>
+          <Hint2> He used to pick locks for fun. </Hint2>
+          <Hint3> Glad he went away. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Vidkunn">
+        <Name id="Name">Vidkunn Vestarsson</Name>
+        <GraveText id="GraveText">
+          Vidkunn Vestarsson
+          801-823
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Vidkunn used to break into peoples houses </Hint1>
+          <Hint2> Just to mess with them. </Hint2>
+          <Hint3> One day he went into the wrong house... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Finnvid">
+        <Name id="Name">Finnvid Tryggsson</Name>
+        <GraveText id="GraveText">
+          Finnvid Tryggsson
+          809-823
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Finnvid was from out of town </Hint1>
+          <Hint2> He was caught stealing from the smithy </Hint2>
+          <Hint3> He didn't make it through the night. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Snækol">
+        <Name id="Name">Snækol Brondulfsson</Name>
+        <GraveText id="GraveText">
+          Snækol Brondulfsson
+          803-830
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Snækol was looking for a ring  </Hint1>
+          <Hint2> He got pretty nasty about it </Hint2>
+          <Hint3> Claimed it could turn him invisible... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Vestar">
+        <Name id="Name">Vestar Thrainsson</Name>
+        <GraveText id="GraveText">
+          Vestar Thrainsson
+          807-832
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Vestar was the son of Thrain, a knight </Hint1>
+          <Hint2> Tired of being in his fathers shadow </Hint2>
+          <Hint3> He turned to crime... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Tyrkir">
+        <Name id="Name">Tyrkir Thjostolfsson</Name>
+        <GraveText id="GraveText">
+          Tyrkir Thjostolfsson
+          805-832
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Tyrkir was always nimble </Hint1>
+          <Hint2> Turned out, he made a really good thief too. </Hint2>
+          <Hint3> Till they caught him and chopped off his fingers. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Saksi">
+        <Name id="Name">Saksi Valthjofsson</Name>
+        <GraveText id="GraveText">
+          Saksi Valthjofsson
+          798-819
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Saksi was a shifty guy. </Hint1>
+          <Hint2> Settled down from out of town </Hint2>
+          <Hint3> Heard Fallkirk were looking for him... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+
+      <Unit id="Sod">
+        <Name id="Name">Sod Ballisson</Name>
+        <GraveText id="GraveText">
+          Sod Ballisson
+          799-823
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Sod Ballisson was the son of the famous thief, Ballis.</Hint1>
+          <Hint2> He inherited some of his fathers skill </Hint2>
+          <Hint3> Not enough of it though, he died in a jail cell. </Hint3>
+
+        </VillagerHints>
+      </Unit>
+
+      <Unit id="Thorleif">
+        <Name id="Name">Thorleif Steinbjornsson</Name>
+        <GraveText id="GraveText">
+          Thorleif Steinbjornsson
+          799-824
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Thorleif? Depends. You a guard? </Hint1>
+          <Hint2> If you're a guard, you legally have to tell me. </Hint2>
+          <Hint3> Alright, he was a thief... </Hint3>
+
+        </VillagerHints>
+      </Unit>
+      <Unit id="Hjorleif">
+        <Name id="Name">Hjorleif Kalfsson</Name>
+        <GraveText id="GraveText">
+          Hjorleif Kalfsson
+          805-823
+        </GraveText>
+        <VillagerHints id="Hints">
+
+          <Hint1> Hjorleif? He was a criminal </Hint1>
+          <Hint2> Heard he broke into the castle </Hint2>
+          <Hint3> Not sure if I believe it... </Hint3>
+
+        </VillagerHints>
+      </Unit>
     </UnitClass>
 
   </Class>
@@ -630,9 +1013,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Mursi is a knight in the kings army. </Hint1>
+          <Hint2> He's pretty tough, I wouldn't stand in his way. </Hint2>
+          <Hint3> Wonder how he's doing... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -643,9 +1026,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Oleif is a guard around here </Hint1>
+          <Hint2> Are you looking for him? </Hint2>
+          <Hint3> He might be off duty... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -657,9 +1040,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Hreida was knighted recently </Hint1>
+          <Hint2> He's been a loyal soldier for his whole life. </Hint2>
+          <Hint3> Why are you looking for him? </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -670,9 +1053,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Ornulf? Yeah he's a knight </Hint1>
+          <Hint2> Why do you ask? </Hint2>
+          <Hint3> Did you see someone commit a crime? </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -683,9 +1066,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Hrafnvartr is a loyal knight. </Hint1>
+          <Hint2> He's related to the king, his cousin I think. </Hint2>
+          <Hint3> As you can imagine, he's usually in the castle... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -703,9 +1086,9 @@
         </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Iogæir is the kings angry cousin. </Hint1>
+          <Hint2> He really likes taking the law into his own hands </Hint2>
+          <Hint3> I'd stay away from him if you can </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -718,9 +1101,9 @@
         </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Blann? He's usually out killing animals. </Hint1>
+          <Hint2> I'd stay away from him if you can. </Hint2>
+          <Hint3> He's not mentally stable. </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -733,9 +1116,9 @@
         </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Snorri is a berserker in the kings personal retinue. </Hint1>
+          <Hint2> He's been struggling with narcolepsy recently </Hint2>
+          <Hint3> Are you a doctor? </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -748,9 +1131,9 @@
         </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Gardi? Doesn't sound familiar... </Hint1>
+          <Hint2> Oh, wait! Is he that new guy?</Hint2>
+          <Hint3> I think he's a berserker or something... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -765,9 +1148,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Vigbjord? He's the Kings personal spy. </Hint1>
+          <Hint2> They call him the Spider. </Hint2>
+          <Hint3> I hear he always has someone listening... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -779,9 +1162,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Lopt? No, I've never heard of him. </Hint1>
+          <Hint2> Maybe he works for the king? </Hint2>
+          <Hint3> Some kind of spy or something... </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -792,9 +1175,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Hreitharr? I think he's one of the kings advisors </Hint1>
+          <Hint2> He's a slimy guy  </Hint2>
+          <Hint3> Probably a thief </Hint3>
 
         </VillagerHints>
       </Unit>
@@ -805,9 +1188,9 @@
 2019-2020 </GraveText>
         <VillagerHints id="Hints">
 
-          <Hint1> XML Dialogue 4 </Hint1>
-          <Hint2> XML Dialogue 5 </Hint2>
-          <Hint3> XML Dialogue 6 </Hint3>
+          <Hint1> Sigenoth is the Kings brother </Hint1>
+          <Hint2> He's a bit of a kleptomaniac... </Hint2>
+          <Hint3> But he has immunity since he's royalty. </Hint3>
 
         </VillagerHints>
       </Unit>

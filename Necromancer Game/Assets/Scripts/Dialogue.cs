@@ -29,6 +29,11 @@ public class Dialogue
     [Tooltip("Defines which type of dialogue the character gives.")]
     public Dialogue_Types m_dialogueType;
 
+
+    public void Start()
+    {
+        SetHintName();
+    }
     /// <summary>
     /// Sets the sentence data
     /// </summary>
@@ -49,5 +54,10 @@ public class Dialogue
         {
             Debug.LogError("Dialogue type not correct: Output was: " + m_dialogueType.ToString());
         }
+    }
+
+    public void SetHintName()
+    {
+
     }
 }
